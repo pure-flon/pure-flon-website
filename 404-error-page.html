@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="요청하신 페이지를 찾을 수 없습니다. Pure-Flon 웹사이트에서 다른 페이지를 탐색해보세요.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <title>페이지를 찾을 수 없습니다 - Pure-Flon</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-8);
+            background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+        }
+        
+        .error-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .error-icon {
+            font-size: 8rem;
+            margin-bottom: var(--space-8);
+            opacity: 0.8;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .error-title {
+            font-size: var(--text-5xl);
+            font-weight: var(--weight-bold);
+            color: var(--gray-900);
+            margin-bottom: var(--space-4);
+        }
+        
+        .error-subtitle {
+            font-size: var(--text-2xl);
+            color: var(--primary-blue);
+            margin-bottom: var(--space-6);
+        }
+        
+        .error-description {
+            font-size: var(--text-lg);
+            color: var(--gray-600);
+            line-height: 1.6;
+            margin-bottom: var(--space-10);
+        }
+        
+        .error-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+            align-items: center;
+            margin-bottom: var(--space-12);
+        }
+        
+        @media (min-width: 640px) {
+            .error-actions {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        
+        .quick-links {
+            background: var(--white);
+            border-radius: var(--border-radius-xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--gray-200);
+        }
+        
+        .quick-links__title {
+            font-size: var(--text-xl);
+            font-weight: var(--weight-bold);
+            color: var(--gray-900);
+            margin-bottom: var(--space-6);
+        }
+        
+        .quick-links__grid {
+            display: grid;
+            gap: var(--space-4);
+        }
+        
+        @media (min-width: 640px) {
+            .quick-links__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .quick-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            padding: var(--space-4);
+            background: var(--gray-50);
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            color: var(--gray-700);
+            transition: all var(--transition-fast);
+        }
+        
+        .quick-link:hover {
+            background: var(--primary-blue);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .quick-link__icon {
+            font-size: var(--text-2xl);
+            flex-shrink: 0;
+        }
+        
+        .quick-link__text {
+            font-weight: var(--weight-medium);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .search-suggestion {
+            margin-top: var(--space-8);
+            padding: var(--space-6);
+            background: var(--gray-50);
+            border-radius: var(--border-radius-lg);
+            border-left: 4px solid var(--primary-blue);
+        }
+        
+        .search-suggestion__title {
+            font-weight: var(--weight-bold);
+            color: var(--gray-900);
+            margin-bottom: var(--space-2);
+        }
+        
+        .search-suggestion__text {
+            color: var(--gray-600);
+            margin-bottom: var(--space-4);
+        }
+        
+        .search-box {
+            position: relative;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: var(--space-3) var(--space-4);
+            border: 2px solid var(--gray-300);
+            border-radius: var(--border-radius);
+            font-size: var(--text-base);
+            transition: border-color var(--transition-fast);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+        }
+        
+        .search-button {
+            position: absolute;
+            right: var(--space-2);
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            padding: var(--space-2);
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            transition: background var(--transition-fast);
+        }
+        
+        .search-button:hover {
+            background: var(--secondary-blue);
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">메인 콘텐츠로 건너뛰기</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="/" aria-label="Pure-Flon 홈페이지">
+                    <img src="/images/logo.svg" alt="Pure-Flon" width="180" height="40">
+                </a>
+            </div>
+            
+            <nav class="nav" role="navigation">
+                <ul class="nav__menu">
+                    <li class="nav__item"><a href="/" class="nav__link">홈</a></li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="#" class="nav__link" aria-haspopup="true">
+                            제품 ▼
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li><a href="/products/medical.html">의료용 PTFE 튜브</a></li>
+                            <li><a href="/products/semiconductor.html">반도체용 PTFE 튜브</a></li>
+                            <li><a href="/products/chemical.html">화학용 PTFE 튜브</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="mailto:contact@pure-flon.com" class="nav__link">문의</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header__actions">
+                <a href="mailto:contact@pure-flon.com?subject=견적 요청" class="btn btn--primary btn--sm">견적 요청</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <div class="error-page">
+            <div class="error-content">
+                <!-- Error Icon -->
+                <div class="error-icon" role="img" aria-label="페이지 없음">
+                    🔍
+                </div>
+                
+                <!-- Error Message -->
+                <h1 class="error-title">404</h1>
+                <h2 class="error-subtitle">페이지를 찾을 수 없습니다</h2>
+                
+                <p class="error-description">
+                    요청하신 페이지가 이동되었거나 삭제되었을 수 있습니다. 
+                    URL을 다시 확인하시거나 아래 링크를 통해 원하시는 정보를 찾아보세요.
+                </p>
+                
+                <!-- Action Buttons -->
+                <div class="error-actions">
+                    <a href="/" class="btn btn--primary btn--lg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                        홈으로 돌아가기
+                    </a>
+                    <a href="mailto:contact@pure-flon.com?subject=페이지 오류 신고" class="btn btn--outline btn--lg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8A2 2 0 0 0 19 6H5A2 2 0 0 0 3 8V16A2 2 0 0 0 5 18H19A2 2 0 0 0 21 16Z"/>
+                            <path d="M7 10L12 13L17 10"/>
+                        </svg>
+                        문제 신고하기
+                    </a>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="quick-links">
+                    <h3 class="quick-links__title">빠른 이동</h3>
+                    <div class="quick-links__grid">
+                        <a href="/products/medical.html" class="quick-link">
+                            <span class="quick-link__icon">🏥</span>
+                            <span class="quick-link__text">의료용 PTFE 튜브</span>
+                        </a>
+                        <a href="/products/semiconductor.html" class="quick-link">
+                            <span class="quick-link__icon">💾</span>
+                            <span class="quick-link__text">반도체용 PTFE 튜브</span>
+                        </a>
+                        <a href="/products/chemical.html" class="quick-link">
+                            <span class="quick-link__icon">⚗️</span>
+                            <span class="quick-link__text">화학용 PTFE 튜브</span>
+                        </a>
+                        <a href="mailto:contact@pure-flon.com?subject=견적 요청" class="quick-link">
+                            <span class="quick-link__icon">📋</span>
+                            <span class="quick-link__text">견적 요청하기</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Search Suggestion -->
+                <div class="search-suggestion">
+                    <h4 class="search-suggestion__title">💡 찾으시는 내용이 있으신가요?</h4>
+                    <p class="search-suggestion__text">
+                        키워드를 입력하시면 관련 정보를 이메일로 안내해드립니다.
+                    </p>
+                    <div class="search-box">
+                        <input 
+                            type="text" 
+                            class="search-input" 
+                            placeholder="예: 의료용 카테터, 반도체 식각, 화학 호환성..."
+                            id="search-input"
+                            maxlength="100"
+                        >
+                        <button class="search-button" onclick="handleSearch()" aria-label="검색">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <img src="/images/logo-white.svg" alt="Pure-Flon" width="160" height="36">
+                    <p>동아시아 시장을 선도하는 프리미엄 PTFE 튜브 제조업체</p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h3>제품</h3>
+                        <ul>
+                            <li><a href="/products/medical.html">의료용 PTFE 튜브</a></li>
+                            <li><a href="/products/semiconductor.html">반도체용 PTFE 튜브</a></li>
+                            <li><a href="/products/chemical.html">화학용 PTFE 튜브</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h3>연락처</h3>
+                        <ul>
+                            <li><a href="mailto:contact@pure-flon.com">contact@pure-flon.com</a></li>
+                            <li><span>+82-32-123-4567</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 Pure-Flon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function handleSearch() {
+            const input = document.getElementById('search-input');
+            const query = input.value.trim();
+            
+            if (query) {
+                const subject = encodeURIComponent(`검색 요청: ${query}`);
+                const body = encodeURIComponent(`안녕하세요,\n\n다음 키워드에 대한 정보를 요청합니다:\n"${query}"\n\n감사합니다.`);
+                
+                window.location.href = `mailto:contact@pure-flon.com?subject=${subject}&body=${body}`;
+            } else {
+                alert('검색어를 입력해주세요.');
+                input.focus();
+            }
+        }
+        
+        // Enter key support
+        document.getElementById('search-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch();
+            }
+        });
+        
+        // Track 404 error for analytics (if GA is implemented)
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                page_title: '404 Error',
+                page_location: window.location.href
+            });
+        }
+        
+        // Auto-focus search input after page load
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('search-input').focus();
+            }, 1000);
+        });
+    </script>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+{
+  "name": "Pure-Flon - 프리미엄 산업용 PTFE 튜브",
+  "short_name": "Pure-Flon",
+  "description": "동아시아 시장을 선도하는 프리미엄 산업용 PTFE 튜브 제조업체. 의료용, 반도체용, 화학용 고품질 PTFE 튜브를 제공합니다.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e5cb3",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "ko",
+  "dir": "ltr",
+  "categories": ["business", "manufacturing", "industrial"],
+  "shortcuts": [
+    {
+      "name": "견적 요청",
+      "short_name": "견적",
+      "description": "PTFE 튜브 견적을 빠르게 요청하세요",
+      "url": "mailto:contact@pure-flon.com?subject=견적 요청",
+      "icons": [
+        {
+          "src": "/images/icons/quote-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "의료용 제품",
+      "short_name": "의료용",
+      "description": "FDA 승인 의료용 PTFE 튜브",
+      "url": "/products/medical.html",
+      "icons": [
+        {
+          "src": "/images/icons/medical-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "반도체용 제품",
+      "short_name": "반도체",
+      "description": "초고순도 반도체용 PTFE 튜브",
+      "url": "/products/semiconductor.html",
+      "icons": [
+        {
+          "src": "/images/icons/semiconductor-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "화학용 제품",
+      "short_name": "화학",
+      "description": "내화학성 화학용 PTFE 튜브",
+      "url": "/products/chemical.html",
+      "icons": [
+        {
+          "src": "/images/icons/chemical-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshots/desktop-home.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Pure-Flon 홈페이지 (데스크톱)"
+    },
+    {
+      "src": "/images/screenshots/mobile-home.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Pure-Flon 홈페이지 (모바일)"
+    },
+    {
+      "src": "/images/screenshots/products-page.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "PTFE 튜브 제품 페이지"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://pure-flon.com/"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}
