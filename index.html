@@ -754,5 +754,50 @@ window.SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXB
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+// 임시 견적 함수
+function handleQuoteClick() {
+    const name = prompt('성함을 입력해주세요:');
+    if (!name) return;
+    
+    const email = prompt('이메일을 입력해주세요:');
+    if (!email || !email.includes('@')) {
+        alert('올바른 이메일을 입력해주세요.');
+        return;
+    }
+    
+    const company = prompt('회사명을 입력해주세요 (선택사항):') || '';
+    
+    const subject = encodeURIComponent('Pure-Flon PTFE 튜브 견적 요청');
+    const body = encodeURIComponent(`
+견적 요청 정보:
+
+성함: ${name}
+이메일: ${email}
+회사명: ${company}
+요청일시: ${new Date().toLocaleString('ko-KR')}
+
+안녕하세요,
+PTFE 튜브에 대한 견적을 요청드립니다.
+
+제품 종류: [의료용/반도체용/화학용 중 선택]
+사양: [내경, 외경, 길이 등]
+수량: 
+용도: 
+
+감사합니다.
+    `);
+    
+    window.open(`mailto:contact@pure-flon.com?subject=${subject}&body=${body}`);
+}
+
+// 견적 버튼들에 이벤트 연결
+document.addEventListener('DOMContentLoaded', function() {
+    const quoteButtons = document.querySelectorAll('.quote-btn, [onclick*="PureFlonApp"]');
+    quoteButtons.forEach(button => {
+        button.onclick = handleQuoteClick;
+    });
+});
+</script>
 </body>
 </html>
