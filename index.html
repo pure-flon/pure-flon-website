@@ -540,7 +540,7 @@ window.SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXB
                         5분 만에 완료되는 간편한 견적 시스템으로 24시간 내에 정확한 가격과 납기를 확인하세요.
                     </p>
                     <div class="quote-cta__actions">
-                        <button class="btn btn--primary btn--lg quote-btn" onclick="PureFlonApp.quoteSystem.showQuoteModal()">
+                        <button class="btn btn--primary btn--lg quote-btn" onclick="handleQuoteClick()">
                             <svg class="btn__icon" width="20" height="20" viewBox="0 0 20 20">
                                 <path d="M4 6H16V8H4V6Z" fill="currentColor"/>
                                 <path d="M4 10H16V12H4V10Z" fill="currentColor"/>
@@ -753,7 +753,6 @@ window.SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXB
     
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="js/main.js"></script>
     <script>
 // 임시 견적 함수
 function handleQuoteClick() {
