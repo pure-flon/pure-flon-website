@@ -9,8 +9,8 @@
 let supabaseClient = null;
 
 // ✅ 수정: 환경 변수 - 실제 값으로 교체 필요
-const SUPABASE_URL = window.SUPABASE_URL || 'YOUR_SUPABASE_URL'; // Vercel 환경변수에서 가져오기
-const SUPABASE_ANON_KEY = window.SUPABASE_ANON_KEY || 'YOUR_SUPABASE_ANON_KEY'; // Vercel 환경변수에서 가져오기
+const SUPABASE_URL = window.SUPABASE_URL || 'https://wdyhdqjgmoycxxvhwxgd.supabase.co'; // Vercel 환경변수에서 가져오기
+const SUPABASE_ANON_KEY = window.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndkeWhkcWpnbW95Y3h4dmh3eGdkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI1MDYzODQsImV4cCI6MjA2ODA4MjM4NH0.3peI1J6-Ms70YnxepjgibSBj0jHAmElyC87mgaD9woc'; // Vercel 환경변수에서 가져오기
 
 // Global App Object
 const PureFlonApp = {
