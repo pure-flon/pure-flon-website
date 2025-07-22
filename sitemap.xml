@@ -1,80 +1,363 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+<!-- 
+파일명: sitemap.xml
+업데이트: 2025-01-22
+버전: v2.0.0 (완전한 B2B 사이트 맵)
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-        
-  <!-- 홈페이지 -->
-  <url>
-    <loc>https://pure-flon.com/</loc>
-    <lastmod>2025-01-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://pure-flon.com/zh-tw/"/>
-    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://pure-flon.com/zh-cn/"/>
-    <image:image>
-      <image:loc>https://pure-flon.com/images/ptfe-hero.jpg</image:loc>
-      <image:title>Pure-Flon PTFE 튜브</image:title>
-      <image:caption>프리미엄 산업용 PTFE 튜브 제조업체</image:caption>
-    </image:image>
-  </url>
 
-  <!-- 의료용 PTFE 튜브 -->
-  <url>
-    <loc>https://pure-flon.com/products/medical.html</loc>
-    <lastmod>2025-01-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/products/medical.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/products/medical.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/products/medical.html"/>
-    <image:image>
-      <image:loc>https://pure-flon.com/images/medical-ptfe-hero.jpg</image:loc>
-      <image:title>의료용 PTFE 튜브</image:title>
-      <image:caption>FDA 승인된 생체 적합성 PTFE 튜브</image:caption>
-    </image:image>
-  </url>
+    <!-- 메인 페이지 -->
+    <url>
+        <loc>https://pure-flon.com/</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh-tw" href="https://pure-flon.com/zh-tw/"/>
+        <xhtml:link rel="alternate" hreflang="zh-cn" href="https://pure-flon.com/zh-cn/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://pure-flon.com/en/"/>
+        <image:image>
+            <image:loc>https://pure-flon.com/images/pure-flon-hero.jpg</image:loc>
+            <image:caption>Pure-Flon PTFE 튜브 제조업체</image:caption>
+        </image:image>
+    </url>
 
-  <!-- 반도체용 PTFE 튜브 -->
-  <url>
-    <loc>https://pure-flon.com/products/semiconductor.html</loc>
-    <lastmod>2025-01-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/products/semiconductor.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/products/semiconductor.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/products/semiconductor.html"/>
-    <image:image>
-      <image:loc>https://pure-flon.com/images/semiconductor-ptfe-hero.jpg</image:loc>
-      <image:title>반도체용 PTFE 튜브</image:title>
-      <image:caption>초고순도 파티클 프리 PTFE 튜브</image:caption>
-    </image:image>
-  </url>
+    <!-- 제품 페이지들 -->
+    <url>
+        <loc>https://pure-flon.com/products/medical.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/products/medical.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/products/medical.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/products/medical.html"/>
+        <image:image>
+            <image:loc>https://pure-flon.com/images/products/medical-ptfe-hero.webp</image:loc>
+            <image:caption>FDA 승인 의료용 PTFE 튜브</image:caption>
+        </image:image>
+    </url>
 
-  <!-- 화학용 PTFE 튜브 -->
-  <url>
-    <loc>https://pure-flon.com/products/chemical.html</loc>
-    <lastmod>2025-01-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/products/chemical.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/products/chemical.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/products/chemical.html"/>
-    <image:image>
-      <image:loc>https://pure-flon.com/images/chemical-ptfe-hero.jpg</image:loc>
-      <image:title>화학용 PTFE 튜브</image:title>
-      <image:caption>내화학성 고압 PTFE 튜브</image:caption>
-    </image:image>
-  </url>
+    <url>
+        <loc>https://pure-flon.com/products/semiconductor.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/products/semiconductor.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/products/semiconductor.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/products/semiconductor.html"/>
+        <image:image>
+            <image:loc>https://pure-flon.com/images/products/semiconductor-ptfe-hero.webp</image:loc>
+            <image:caption>초고순도 반도체용 PTFE 튜브</image:caption>
+        </image:image>
+    </url>
 
-  <!-- 404 페이지 (색인하지 않음) -->
-  <url>
-    <loc>https://pure-flon.com/404.html</loc>
-    <lastmod>2025-01-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
+    <url>
+        <loc>https://pure-flon.com/products/chemical.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/products/chemical.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/products/chemical.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/products/chemical.html"/>
+        <image:image>
+            <image:loc>https://pure-flon.com/images/products/chemical-ptfe-hero.webp</image:loc>
+            <image:caption>내화학성 화학용 PTFE 튜브</image:caption>
+        </image:image>
+    </url>
+
+    <!-- 견적 관련 페이지들 -->
+    <url>
+        <loc>https://pure-flon.com/quote/request.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/quote/request.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/quote/request.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/quote/request.html"/>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/quote/configurator.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 시장별 페이지들 -->
+    <url>
+        <loc>https://pure-flon.com/markets/japan.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/markets/japan.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/markets/japan.html"/>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/markets/korea.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/markets/korea.html"/>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/markets/taiwan.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-tw" href="https://pure-flon.com/markets/taiwan.html"/>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/markets/china.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-cn" href="https://pure-flon.com/markets/china.html"/>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/markets/southeast-asia.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 회사 정보 페이지들 -->
+    <url>
+        <loc>https://pure-flon.com/company/about.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/company/about.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/company/about.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/company/about.html"/>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/company/quality.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/company/manufacturing.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/company/certifications.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/company/careers.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/company/news.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- 지원 페이지들 -->
+    <url>
+        <loc>https://pure-flon.com/support/technical-support.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/support/installation.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/support/maintenance.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/support/troubleshooting.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/support/downloads.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/support/contact.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- 상세 제품 카탈로그 -->
+    <url>
+        <loc>https://pure-flon.com/products/catalog/ptfe-standard.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/products/catalog/ptfe-conductive.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/products/catalog/ptfe-flexible.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/products/catalog/custom-solutions.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 기술 사양 페이지들 -->
+    <url>
+        <loc>https://pure-flon.com/products/specifications/technical-specs.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/products/specifications/certifications.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/products/specifications/installation-guide.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- 고객 포털 (인덱싱에서 제외되지만 구조 표시용) -->
+    <url>
+        <loc>https://pure-flon.com/customer/login.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/customer/register.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <!-- 다국어 페이지들 (일본어) -->
+    <url>
+        <loc>https://pure-flon.com/ja/</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://pure-flon.com/en/"/>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/ja/products/medical.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/products/medical.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/products/medical.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/products/medical.html"/>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/ja/products/semiconductor.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/ja/products/chemical.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 다국어 페이지들 (영어) -->
+    <url>
+        <loc>https://pure-flon.com/en/</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://pure-flon.com/en/"/>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/en/products/medical.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/en/products/semiconductor.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pure-flon.com/en/products/chemical.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 404 에러 페이지 (SEO 최적화용) -->
+    <url>
+        <loc>https://pure-flon.com/404.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
 
 </urlset>

@@ -1,65 +1,242 @@
-# Pure-Flon PTFE 튜브 웹사이트 - robots.txt
-# 검색 엔진 크롤링 최적화 설정
+# Pure-Flon PTFE Tubes - Robots.txt
+# 파일명: robots.txt
+# 업데이트: 2025-01-22
+# 버전: v2.0.0 (완전한 B2B SEO 최적화)
 
+# =================================
+# 일반 크롤링 정책
+# =================================
+
+# 모든 검색엔진 크롤러에 대한 기본 규칙
 User-agent: *
-Allow: /
 
-# 주요 페이지 우선순위 높임
+# 허용되는 페이지들
+Allow: /
 Allow: /products/
+Allow: /quote/request.html
+Allow: /markets/
+Allow: /company/
+Allow: /support/
 Allow: /css/
 Allow: /js/
 Allow: /images/
+Allow: /documents/
 
-# 관리자 및 임시 파일 차단
+# 크롤링 금지 페이지들
+Disallow: /customer/
+Disallow: /api/
 Disallow: /admin/
-Disallow: /private/
+Disallow: /config/
+Disallow: /database/
+Disallow: /scripts/
+Disallow: /tests/
+Disallow: /docs/
+
+# 임시/테스트 페이지들
 Disallow: /temp/
-Disallow: /*.tmp$
-Disallow: /*?*utm_*
-Disallow: /*?*ref=
-Disallow: /*?*gclid=
+Disallow: /test/
+Disallow: /staging/
+Disallow: /dev/
+
+# 개인정보/보안 관련 파일들
+Disallow: /*.env
+Disallow: /*.log
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+
+# 예외: 중요한 XML/TXT 파일들은 허용
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /security.txt
+
+# 동적 생성 페이지 (쿼리 파라미터 포함)
+Disallow: /*?*
+Disallow: /*#
 
 # 중복 콘텐츠 방지
-Disallow: /*/amp/
-Disallow: /*?print=1
-Disallow: /*?share=
+Disallow: /print/
+Disallow: /*print*
+Disallow: /*preview*
 
-# 사이트맵 위치 명시
-Sitemap: https://pure-flon.com/sitemap.xml
-
-# 크롤링 속도 조절 (선택사항)
-Crawl-delay: 1
-
-# 특정 검색엔진 최적화
+# =================================
+# Google 크롤러 특별 규칙
+# =================================
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
+Allow: /products/
+Allow: /quote/request.html
+Allow: /markets/
+Allow: /company/
+Allow: /support/
+Allow: /css/*.css
+Allow: /js/*.js
+Allow: /images/
+Allow: /documents/*.pdf
 
+# Google 이미지 크롤러
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /assets/
+Disallow: /images/private/
+Disallow: /images/internal/
+
+# =================================
+# 다른 주요 검색엔진들
+# =================================
+
+# Bing 크롤러
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
+Allow: /products/
+Allow: /quote/request.html
+Allow: /markets/
+Disallow: /customer/
+Disallow: /api/
 
-# 스팸봇 차단
+# Baidu 크롤러 (중국 시장 대응)
+User-agent: Baiduspider
+Allow: /
+Allow: /products/
+Allow: /markets/china.html
+Allow: /zh-cn/
+Disallow: /customer/
+Disallow: /api/
+
+# Yandex 크롤러 (러시아)
+User-agent: YandexBot
+Allow: /
+Allow: /products/
+Disallow: /customer/
+Disallow: /api/
+
+# Naver 크롤러 (한국)
+User-agent: Yeti
+Allow: /
+Allow: /products/
+Allow: /markets/korea.html
+Allow: /ko/
+Disallow: /customer/
+
+# Yahoo Japan 크롤러
+User-agent: Y!J-BSC
+Allow: /
+Allow: /products/
+Allow: /markets/japan.html  
+Allow: /ja/
+Disallow: /customer/
+
+# =================================
+# 소셜 미디어 크롤러들
+# =================================
+
+# Facebook 크롤러
+User-agent: facebookexternalhit
+Allow: /
+Allow: /products/
+Allow: /company/
+Disallow: /customer/
+Disallow: /api/
+
+# LinkedIn 크롤러
+User-agent: LinkedInBot
+Allow: /
+Allow: /products/
+Allow: /company/
+Allow: /company/careers.html
+Disallow: /customer/
+
+# Twitter 크롤러
+User-agent: Twitterbot
+Allow: /
+Allow: /products/
+Allow: /company/news.html
+Disallow: /customer/
+
+# =================================
+# 악성/스팸 크롤러 차단
+# =================================
+
+# 알려진 스팸 봇들
 User-agent: AhrefsBot
-Disallow: /
-
-User-agent: SemrushBot
 Disallow: /
 
 User-agent: MJ12bot
 Disallow: /
 
-# 소셜 미디어 봇 허용
-User-agent: facebookexternalhit
-Allow: /
+User-agent: DotBot
+Disallow: /
 
-User-agent: Twitterbot
-Allow: /
+User-agent: SemrushBot
+Disallow: /
 
-User-agent: LinkedInBot
-Allow: /
+User-agent: BLEXBot
+Disallow: /
 
-# 주요 제품 페이지 우선 크롤링 가이드
-# 의료용 PTFE 튜브: /products/medical.html
-# 반도체용 PTFE 튜브: /products/semiconductor.html
-# 화학용 PTFE 튜브: /products/chemical.html
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# =================================
+# 크롤링 속도 제한
+# =================================
+
+# Google 크롤러 속도 제한 (1초에 1 요청)
+User-agent: Googlebot
+Crawl-delay: 1
+
+# 기타 크롤러들 (2초에 1 요청)
+User-agent: *
+Crawl-delay: 2
+
+# =================================
+# 사이트맵 위치
+# =================================
+
+# XML 사이트맵
+Sitemap: https://pure-flon.com/sitemap.xml
+
+# 다국어 사이트맵들
+Sitemap: https://pure-flon.com/sitemap-ko.xml
+Sitemap: https://pure-flon.com/sitemap-ja.xml  
+Sitemap: https://pure-flon.com/sitemap-en.xml
+Sitemap: https://pure-flon.com/sitemap-zh.xml
+
+# 이미지 사이트맵
+Sitemap: https://pure-flon.com/sitemap-images.xml
+
+# 뉴스 사이트맵 (회사 뉴스용)
+Sitemap: https://pure-flon.com/sitemap-news.xml
+
+# =================================
+# 특별 지시사항
+# =================================
+
+# 주석: 
+# 1. 고객 포털 (/customer/) 전체 차단으로 개인정보 보호
+# 2. API 엔드포인트 (/api/) 차단으로 보안 강화  
+# 3. 다국어 페이지들은 허용하여 글로벌 SEO 최적화
+# 4. 제품 관련 페이지들은 모두 허용하여 비즈니스 노출 극대화
+# 5. 기술 문서 및 지원 페이지도 허용하여 전문성 어필
+# 6. 크롤링 속도 제한으로 서버 부하 방지
+# 7. 소셜 미디어 봇들도 허용하여 SNS 공유 최적화
+
+# 추가 정보:
+# - 이 robots.txt는 Pure-Flon의 B2B 비즈니스 특성을 고려하여 설계됨
+# - 제조업체로서 제품 정보와 기술 지원 페이지 노출을 우선시함
+# - 동아시아 시장 진출을 고려하여 각국 검색엔진 최적화 포함
+# - 보안과 개인정보 보호를 위해 내부 시스템 페이지들 차단
+
+# 마지막 업데이트: 2025-01-22
+# 다음 검토 예정일: 2025-04-22
