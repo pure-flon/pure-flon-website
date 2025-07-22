@@ -1,398 +1,307 @@
+<!-- 
+파일명: index.html
+Pure-Flon PTFE 튜브 B2B 웹사이트 - 메인 홈페이지
+업데이트: 2025-01-22 v3.0.0
+개선사항: 2025년 웹 표준 준수, SEO 최적화, 성능 개선, 보안 강화
+-->
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 2025 SEO 최적화 -->
-    <meta name="description" content="Pure-Flon은 동아시아 시장을 선도하는 프리미엄 PTFE 튜브 제조업체입니다. 의료용(FDA 승인), 반도체용(99.99% 순도), 화학용(200+ 화학물질 호환) 고품질 솔루션을 제공합니다.">
-    <meta name="keywords" content="PTFE 튜브, 테프론 튜브, 의료용 튜브, 반도체 튜브, 화학 튜브, Pure-Flon, FDA 승인, 초고순도, 내화학성">
-    <meta name="author" content="Pure-Flon Industries">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
+    <!-- 2025년 SEO 최적화 -->
+    <title>Pure-Flon - 동아시아 선도 PTFE 튜브 제조업체 | 의료용·반도체용·화학용</title>
+    <meta name="description" content="Pure-Flon은 한국 기반 PTFE 튜브 제조 전문기업으로 일본, 대만, 중국 시장에 의료용, 반도체용, 화학용 고품질 PTFE 솔루션을 제공합니다. FDA 승인, ISO 인증, 24시간 기술지원.">
+    <meta name="keywords" content="PTFE 튜브, 테프론 튜브, 의료용 튜브, 반도체용 튜브, 화학용 튜브, Pure-Flon, 한국 제조업, 동아시아 B2B">
+    <meta name="author" content="Pure-Flon Co., Ltd.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://pure-flon.com/">
     
-    <!-- E-A-T 강화 -->
-    <meta name="expertise" content="25년 PTFE 튜브 제조 경험, ISO 9001 인증, FDA 승인 제품">
-    <meta name="authoritativeness" content="동아시아 PTFE 튜브 시장 점유율 1위, 10,000+ 글로벌 고객">
-    <meta name="trustworthiness" content="99.9% 품질 보증, 24시간 기술지원, 25년 무결함 공급 실적">
+    <!-- 2025년 Core Web Vitals 최적화 -->
+    <meta name="theme-color" content="#1e5cb3">
+    <meta name="color-scheme" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pure-flon.com/">
-    <meta property="og:title" content="Pure-Flon - 동아시아 1위 프리미엄 PTFE 튜브 제조업체">
-    <meta property="og:description" content="FDA 승인 의료용, 99.99% 순도 반도체용, 200+ 화학물질 호환 화학용 PTFE 튜브. 25년 경험의 신뢰할 수 있는 파트너.">
-    <meta property="og:image" content="https://pure-flon.com/images/og-image.jpg">
+    <meta property="og:site_name" content="Pure-Flon">
+    <meta property="og:title" content="Pure-Flon - 동아시아 선도 PTFE 튜브 제조업체">
+    <meta property="og:description" content="의료용, 반도체용, 화학용 고품질 PTFE 튜브를 일본, 대만, 중국 시장에 제공하는 한국 기반 전문 제조기업">
+    <meta property="og:image" content="https://pure-flon.com/images/og-image-1200x630.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Pure-Flon">
     <meta property="og:locale" content="ko_KR">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="zh_TW">
     
-    <!-- Twitter -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@pureflon">
     <meta name="twitter:creator" content="@pureflon">
-    <meta name="twitter:title" content="Pure-Flon - 동아시아 1위 프리미엄 PTFE 튜브 제조업체">
-    <meta name="twitter:description" content="FDA 승인 의료용, 99.99% 순도 반도체용, 200+ 화학물질 호환 화학용 PTFE 튜브">
-    <meta name="twitter:image" content="https://pure-flon.com/images/twitter-image.jpg">
+    <meta name="twitter:title" content="Pure-Flon - 동아시아 선도 PTFE 튜브 제조업체">
+    <meta name="twitter:description" content="의료용, 반도체용, 화학용 고품질 PTFE 튜브 전문 제조기업">
+    <meta name="twitter:image" content="https://pure-flon.com/images/twitter-card-1200x600.webp">
     
-    <!-- 다국어 지원 -->
-    <link rel="alternate" hreflang="ko" href="https://pure-flon.com/">
-    <link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/">
-    <link rel="alternate" hreflang="en" href="https://pure-flon.com/en/">
+    <!-- 다국어 지원 (hreflang) -->
+    <link rel="alternate" hreflang="ko-kr" href="https://pure-flon.com/">
+    <link rel="alternate" hreflang="ja-jp" href="https://pure-flon.com/ja/">
+    <link rel="alternate" hreflang="en-us" href="https://pure-flon.com/en/">
     <link rel="alternate" hreflang="zh-tw" href="https://pure-flon.com/zh-tw/">
     <link rel="alternate" hreflang="zh-cn" href="https://pure-flon.com/zh-cn/">
-    <link rel="alternate" hreflang="th" href="https://pure-flon.com/th/">
-    <link rel="alternate" hreflang="vi" href="https://pure-flon.com/vi/">
-    <link rel="alternate" hreflang="id" href="https://pure-flon.com/id/">
-    <link rel="alternate" hreflang="ms" href="https://pure-flon.com/ms/">
     <link rel="alternate" hreflang="x-default" href="https://pure-flon.com/en/">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://pure-flon.com/">
+    <!-- Favicon 및 앱 아이콘 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
     
-    <!-- Favicon & PWA -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#1e5cb3">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Pure-Flon">
+    <!-- Critical CSS 인라인 (성능 최적화) -->
+    <style>
+        /* Critical Above-the-fold 스타일 */
+        :root {
+            --primary-blue: #1e5cb3;
+            --secondary-blue: #0d2e5c;
+            --accent-orange: #ff6b35;
+            --white: #ffffff;
+            --gray-900: #0f172a;
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--gray-900);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            height: 80px;
+        }
+    </style>
     
-    <!-- 성능 최적화 - 중요 리소스 프리로드 -->
-    <link rel="preload" href="css/main.css" as="style">
-    <link rel="preload" href="js/main.js" as="script">
-    <link rel="preload" href="fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="images/hero-ptfe-tubes.avif" as="image" fetchpriority="high">
+    <!-- 폰트 비동기 로딩 -->
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
     
-    <!-- DNS 프리페치 -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <!-- CSS 비동기 로딩 -->
+    <link rel="preload" href="/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/main.css"></noscript>
     
-    <!-- 폰트 최적화 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- 2025년 보안 강화 -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' data: https: blob:;
+        connect-src 'self' https://*.supabase.co https://api.pure-flon.com;
+        form-action 'self' mailto:;
+        frame-src 'none';
+        base-uri 'self';
+        upgrade-insecure-requests;
+    ">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    
-    <!-- 구조화된 데이터 - 회사 정보 -->
+    <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Pure-Flon",
-      "alternateName": "Pure-Flon Industries",
+      "name": "Pure-Flon Co., Ltd.",
+      "alternateName": "Pure-Flon",
       "url": "https://pure-flon.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://pure-flon.com/images/logo.png",
-        "width": 300,
-        "height": 100
-      },
-      "description": "동아시아 시장을 선도하는 프리미엄 PTFE 튜브 제조업체",
+      "logo": "https://pure-flon.com/images/logo-structured-data.png",
+      "description": "동아시아 시장을 선도하는 PTFE 튜브 전문 제조업체",
       "foundingDate": "1999",
-      "numberOfEmployees": "150-200",
-      "industry": "Chemical Manufacturing",
-      "naics": "325211",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "인천광역시 연수구 컨벤시아대로 165",
-        "addressLocality": "인천",
-        "addressRegion": "인천광역시",
-        "postalCode": "22006",
-        "addressCountry": "KR"
+        "addressCountry": "KR",
+        "addressRegion": "경기도",
+        "addressLocality": "인천광역시"
       },
       "contactPoint": [
         {
           "@type": "ContactPoint",
           "telephone": "+82-32-123-4567",
-          "contactType": "sales",
-          "availableLanguage": ["ko", "ja", "en", "zh"],
-          "email": "contact@pure-flon.com"
+          "contactType": "customer service",
+          "areaServed": ["KR", "JP", "TW", "CN"],
+          "availableLanguage": ["Korean", "Japanese", "English", "Chinese"]
         },
         {
           "@type": "ContactPoint",
-          "telephone": "+82-32-123-4568",
-          "contactType": "technical support",
-          "availableLanguage": ["ko", "ja", "en"],
-          "email": "support@pure-flon.com"
+          "email": "sales@pure-flon.com",
+          "contactType": "sales",
+          "areaServed": ["KR", "JP", "TW", "CN"]
         }
       ],
       "sameAs": [
         "https://www.linkedin.com/company/pure-flon",
         "https://twitter.com/pureflon"
       ],
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "ISO 9001:2015 Quality Management",
-          "credentialCategory": "Quality Certification"
-        },
-        {
-          "@type": "EducationalOccupationalCredential", 
-          "name": "FDA 21 CFR 177.1550 Approval",
-          "credentialCategory": "Medical Device Certification"
-        }
-      ],
-      "makesOffer": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "의료용 PTFE 튜브",
-            "category": "Medical Device Components"
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "PTFE 튜브 제품 카탈로그",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "의료용 PTFE 튜브",
+              "description": "FDA 승인 생체 적합성 PTFE 튜브",
+              "category": "Medical Device Components"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product", 
+              "name": "반도체용 PTFE 튜브",
+              "description": "초고순도 반도체 공정용 PTFE 튜브",
+              "category": "Semiconductor Equipment"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "화학용 PTFE 튜브", 
+              "description": "내화학성 산업용 PTFE 튜브",
+              "category": "Chemical Processing Equipment"
+            }
           }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "반도체용 PTFE 튜브", 
-            "category": "Semiconductor Components"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "화학용 PTFE 튜브",
-            "category": "Chemical Processing Equipment"
-          }
-        }
-      ]
+        ]
+      }
     }
     </script>
     
-    <!-- 제품 카탈로그 구조화된 데이터 -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Pure-Flon PTFE 튜브 제품군",
-      "description": "의료, 반도체, 화학 산업용 전문 PTFE 튜브",
-      "numberOfItems": 3,
-      "itemListElement": [
-        {
-          "@type": "Product",
-          "position": 1,
-          "name": "의료용 PTFE 튜브",
-          "description": "FDA 승인, USP Class VI 인증, 생체 적합성 보장",
-          "brand": "Pure-Flon",
-          "manufacturer": "Pure-Flon Industries",
-          "category": "Medical Device Components",
-          "url": "https://pure-flon.com/products/medical.html",
-          "image": "https://pure-flon.com/images/medical-ptfe-tubes.jpg",
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "FDA 승인",
-              "value": "21 CFR 177.1550"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "순도",
-              "value": "99.9%"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "온도 범위",
-              "value": "-270°C ~ 260°C"
-            }
-          ]
-        },
-        {
-          "@type": "Product",
-          "position": 2,
-          "name": "반도체용 PTFE 튜브",
-          "description": "99.99% 초고순도, 파티클 프리, 정전기 방지",
-          "brand": "Pure-Flon",
-          "manufacturer": "Pure-Flon Industries",
-          "category": "Semiconductor Components",
-          "url": "https://pure-flon.com/products/semiconductor.html",
-          "image": "https://pure-flon.com/images/semiconductor-ptfe-tubes.jpg",
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "순도",
-              "value": "99.99%"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "파티클",
-              "value": "< 0.1 μm"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "정전기 방지",
-              "value": "10⁶ Ω·cm"
-            }
-          ]
-        },
-        {
-          "@type": "Product",
-          "position": 3,
-          "name": "화학용 PTFE 튜브",
-          "description": "200+ 화학물질 호환, 완전 내화학성, 고압 지원",
-          "brand": "Pure-Flon",
-          "manufacturer": "Pure-Flon Industries", 
-          "category": "Chemical Processing Equipment",
-          "url": "https://pure-flon.com/products/chemical.html",
-          "image": "https://pure-flon.com/images/chemical-ptfe-tubes.jpg",
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "화학 호환성",
-              "value": "200+ 화학물질"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "최대 압력",
-              "value": "150 bar"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "내화학성",
-              "value": "완전 내성"
-            }
-          ]
-        }
-      ]
-    }
+    <!-- 환경 변수 및 설정 -->
+    <script>
+        // Vercel 환경 변수를 클라이언트에서 사용 (보안 검증된 것만)
+        window.PURE_FLON_CONFIG = {
+            SUPABASE_URL: 'https://wdyhdqjgmoycxxvhwxgd.supabase.co',
+            SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndkeWhkcWpnbW95Y3h4dmh3eGdkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI1MDYzODQsImV4cCI6MjA2ODA4MjM4NH0.3peI1J6-Ms70YnxepjgibSBj0jHAmElyC87mgaD9woc',
+            ENVIRONMENT: 'production',
+            VERSION: '3.0.0',
+            BUILD_DATE: '2025-01-22'
+        };
     </script>
-    
-    <!-- FAQ 구조화된 데이터 -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "PTFE 튜브의 최대 사용 온도는 얼마인가요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pure-Flon PTFE 튜브는 -270°C에서 260°C까지 연속 사용이 가능하며, 단기간(1시간 이내) 최대 280°C까지 견딜 수 있습니다."
-          }
-        },
-        {
-          "@type": "Question", 
-          "name": "의료용 PTFE 튜브는 어떤 인증을 받았나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "FDA 21 CFR 177.1550 승인, USP Class VI 인증, ISO 10993 생체적합성 테스트 통과로 안전성이 검증되었습니다."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "최소 주문량은 얼마인가요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "제품에 따라 다르지만 일반적으로 100미터부터 주문 가능하며, 맞춤형 사양의 경우 별도 협의가 필요합니다."
-          }
-        }
-      ]
-    }
-    </script>
-    
-    <title>Pure-Flon - 동아시아 1위 프리미엄 PTFE 튜브 제조업체 | FDA 승인 의료용 | 99.99% 순도 반도체용 | 200+ 화학물질 호환</title>
 </head>
+
 <body>
-    <!-- 접근성 향상 -->
+    <!-- Skip Links (접근성) -->
     <a href="#main-content" class="skip-link">메인 콘텐츠로 건너뛰기</a>
+    <a href="#navigation" class="skip-link">네비게이션으로 건너뛰기</a>
     
-    <!-- 구조화된 마크업 -->
-    <div itemscope itemtype="https://schema.org/Organization">
-        
     <!-- Header -->
     <header class="header" role="banner">
         <div class="header__container">
             <div class="header__logo">
-                <a href="/" aria-label="Pure-Flon 홈페이지" itemprop="url">
+                <a href="/" aria-label="Pure-Flon 홈페이지로 이동">
                     <picture>
-                        <source srcset="images/logo.avif" type="image/avif">
-                        <source srcset="images/logo.webp" type="image/webp">
-                        <img src="images/logo.svg" alt="Pure-Flon" width="180" height="40" itemprop="logo">
+                        <source media="(min-width: 768px)" srcset="/images/logo-desktop.svg">
+                        <img src="/images/logo-mobile.svg" alt="Pure-Flon" width="180" height="40" loading="eager" decoding="async">
                     </picture>
                 </a>
             </div>
             
-            <!-- 향상된 네비게이션 -->
-            <nav class="nav" role="navigation" aria-label="메인 네비게이션">
+            <!-- Desktop Navigation -->
+            <nav id="navigation" class="nav" role="navigation" aria-label="메인 네비게이션">
                 <ul class="nav__menu">
                     <li class="nav__item nav__item--dropdown">
-                        <a href="#" class="nav__link" aria-haspopup="true" aria-expanded="false">
-                            제품
+                        <a href="#products" class="nav__link" aria-haspopup="true" aria-expanded="false">
+                            <span>제품</span>
                             <svg class="nav__icon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
                                 <path d="M6 8L10 4H2L6 8Z" fill="currentColor"/>
                             </svg>
                         </a>
                         <ul class="nav__dropdown" role="menu">
-                            <li role="none"><a href="products/medical.html" role="menuitem">🏥 의료용 PTFE 튜브</a></li>
-                            <li role="none"><a href="products/semiconductor.html" role="menuitem">💾 반도체용 PTFE 튜브</a></li>
-                            <li role="none"><a href="products/chemical.html" role="menuitem">⚗️ 화학용 PTFE 튜브</a></li>
-                            <li role="none"><a href="#quote-modal" role="menuitem">🔧 맞춤형 솔루션</a></li>
+                            <li role="none"><a href="/products/medical" role="menuitem">의료용 PTFE 튜브</a></li>
+                            <li role="none"><a href="/products/semiconductor" role="menuitem">반도체용 PTFE 튜브</a></li>
+                            <li role="none"><a href="/products/chemical" role="menuitem">화학용 PTFE 튜브</a></li>
+                            <li role="none"><a href="/products/industrial" role="menuitem">산업용 PTFE 튜브</a></li>
+                            <li role="none"><a href="/products/custom" role="menuitem">맞춤형 솔루션</a></li>
                         </ul>
                     </li>
                     <li class="nav__item nav__item--dropdown">
-                        <a href="#" class="nav__link" aria-haspopup="true" aria-expanded="false">
-                            시장
+                        <a href="#markets" class="nav__link" aria-haspopup="true" aria-expanded="false">
+                            <span>시장</span>
                             <svg class="nav__icon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
                                 <path d="M6 8L10 4H2L6 8Z" fill="currentColor"/>
                             </svg>
                         </a>
                         <ul class="nav__dropdown" role="menu">
-                            <li role="none"><a href="#markets" role="menuitem">🇯🇵 일본 시장</a></li>
-                            <li role="none"><a href="#markets" role="menuitem">🇰🇷 한국 시장</a></li>
-                            <li role="none"><a href="#markets" role="menuitem">🇹🇼 대만 시장</a></li>
-                            <li role="none"><a href="#markets" role="menuitem">🇨🇳 중국 시장</a></li>
-                            <li role="none"><a href="#markets" role="menuitem">🌏 동남아시아</a></li>
+                            <li role="none"><a href="/markets/japan" role="menuitem">🇯🇵 일본</a></li>
+                            <li role="none"><a href="/markets/korea" role="menuitem">🇰🇷 한국</a></li>
+                            <li role="none"><a href="/markets/taiwan" role="menuitem">🇹🇼 대만</a></li>
+                            <li role="none"><a href="/markets/china" role="menuitem">🇨🇳 중국</a></li>
+                            <li role="none"><a href="/markets/southeast-asia" role="menuitem">🌏 동남아시아</a></li>
                         </ul>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">회사 소개</a>
+                        <a href="/about" class="nav__link">회사 소개</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#certifications" class="nav__link">품질 & 인증</a>
+                        <a href="/quality" class="nav__link">품질 & 인증</a>
                     </li>
                     <li class="nav__item">
-                        <a href="mailto:contact@pure-flon.com?subject=고객 지원 요청" class="nav__link">지원</a>
+                        <a href="/support" class="nav__link">지원</a>
                     </li>
                 </ul>
             </nav>
             
-            <!-- 우측 액션 -->
+            <!-- Header Actions -->
             <div class="header__actions">
-                <!-- 언어 선택기 -->
+                <!-- Language Selector -->
                 <div class="language-selector">
                     <button class="language-current" aria-label="언어 선택" aria-haspopup="true" aria-expanded="false">
-                        <span class="flag" aria-hidden="true">🇰🇷</span>
+                        <span class="flag" role="img" aria-label="한국">🇰🇷</span>
                         <span class="lang-code">KO</span>
                         <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
                             <path d="M6 8L10 4H2L6 8Z" fill="currentColor"/>
                         </svg>
                     </button>
                     <ul class="language-options" role="menu">
-                        <li><a href="/" class="language-option" data-lang="ko" role="menuitem" hreflang="ko">🇰🇷 한국어</a></li>
-                        <li><a href="/ja/" class="language-option" data-lang="ja" role="menuitem" hreflang="ja">🇯🇵 日本語</a></li>
-                        <li><a href="/en/" class="language-option" data-lang="en" role="menuitem" hreflang="en">🇺🇸 English</a></li>
-                        <li><a href="/zh-tw/" class="language-option" data-lang="zh-tw" role="menuitem" hreflang="zh-tw">🇹🇼 繁體中文</a></li>
-                        <li><a href="/zh-cn/" class="language-option" data-lang="zh-cn" role="menuitem" hreflang="zh-cn">🇨🇳 简体中文</a></li>
-                        <li><a href="/th/" class="language-option" data-lang="th" role="menuitem" hreflang="th">🇹🇭 ไทย</a></li>
-                        <li><a href="/vi/" class="language-option" data-lang="vi" role="menuitem" hreflang="vi">🇻🇳 Tiếng Việt</a></li>
-                        <li><a href="/id/" class="language-option" data-lang="id" role="menuitem" hreflang="id">🇮🇩 Indonesia</a></li>
-                        <li><a href="/ms/" class="language-option" data-lang="ms" role="menuitem" hreflang="ms">🇲🇾 Melayu</a></li>
+                        <li role="none"><a href="#" class="language-option" data-lang="ko" role="menuitem">🇰🇷 한국어</a></li>
+                        <li role="none"><a href="/ja" class="language-option" data-lang="ja" role="menuitem">🇯🇵 日本語</a></li>
+                        <li role="none"><a href="/en" class="language-option" data-lang="en" role="menuitem">🇺🇸 English</a></li>
+                        <li role="none"><a href="/zh-tw" class="language-option" data-lang="zh-tw" role="menuitem">🇹🇼 繁體中文</a></li>
+                        <li role="none"><a href="/zh-cn" class="language-option" data-lang="zh-cn" role="menuitem">🇨🇳 简体中文</a></li>
                     </ul>
                 </div>
                 
-                <a href="mailto:contact@pure-flon.com?subject=고객 포털 접근 요청" class="btn btn--primary btn--sm">고객 포털</a>
+                <!-- CTA Button -->
+                <a href="/customer-portal" class="btn btn--primary btn--sm" rel="noopener">고객 포털</a>
                 
-                <!-- 모바일 메뉴 토글 -->
-                <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+                <!-- Mobile Menu Toggle -->
+                <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-mobile">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -400,74 +309,76 @@
             </div>
         </div>
         
-        <!-- 모바일 네비게이션 -->
-        <nav class="nav-mobile" role="navigation" aria-label="모바일 네비게이션">
+        <!-- Mobile Navigation -->
+        <nav id="nav-mobile" class="nav-mobile" role="navigation" aria-label="모바일 네비게이션" aria-hidden="true">
             <ul class="nav-mobile__menu">
                 <li class="nav-mobile__item">
-                    <a href="/products/medical.html" class="nav-mobile__link">🏥 의료용 PTFE 튜브</a>
+                    <a href="/products/medical" class="nav-mobile__link">의료용 PTFE 튜브</a>
                 </li>
                 <li class="nav-mobile__item">
-                    <a href="/products/semiconductor.html" class="nav-mobile__link">💾 반도체용 PTFE 튜브</a>
+                    <a href="/products/semiconductor" class="nav-mobile__link">반도체용 PTFE 튜브</a>
                 </li>
                 <li class="nav-mobile__item">
-                    <a href="/products/chemical.html" class="nav-mobile__link">⚗️ 화학용 PTFE 튜브</a>
+                    <a href="/products/chemical" class="nav-mobile__link">화학용 PTFE 튜브</a>
                 </li>
                 <li class="nav-mobile__item">
-                    <a href="#about" class="nav-mobile__link">회사 소개</a>
+                    <a href="/about" class="nav-mobile__link">회사 소개</a>
                 </li>
                 <li class="nav-mobile__item">
-                    <a href="#certifications" class="nav-mobile__link">품질 & 인증</a>
+                    <a href="/quality" class="nav-mobile__link">품질 & 인증</a>
                 </li>
                 <li class="nav-mobile__item">
-                    <a href="#quote-modal" class="nav-mobile__link btn btn--primary">견적 요청</a>
+                    <a href="/support" class="nav-mobile__link">지원</a>
+                </li>
+                <li class="nav-mobile__item">
+                    <a href="/quote-request" class="nav-mobile__link btn btn--primary">견적 요청</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <!-- 메인 콘텐츠 -->
-    <main id="main-content" role="main" itemprop="mainContentOfPage">
-        
-        <!-- 히어로 섹션 -->
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero__container">
                 <div class="hero__content">
                     <div class="hero__text">
-                        <h1 id="hero-title" class="hero__title" itemprop="name">
+                        <h1 id="hero-title" class="hero__title">
                             동아시아를 선도하는<br>
                             <span class="text-gradient">프리미엄 PTFE 튜브</span>
                         </h1>
-                        <p class="hero__description" itemprop="description">
+                        <p class="hero__description">
                             의료, 반도체, 화학 산업을 위한 최고 품질의 PTFE 튜브를 제공합니다. 
                             99.9% 순도, FDA 승인, ISO 인증으로 신뢰할 수 있는 솔루션을 경험하세요.
                         </p>
                         <div class="hero__actions">
-                            <button class="btn btn--primary btn--lg" data-modal-target="quote-modal" aria-describedby="quote-description">
+                            <button class="btn btn--primary btn--lg" onclick="PureFlonApp.quoteSystem.showQuoteModal()">
                                 <svg class="btn__icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
                                     <path d="M4 6H16V8H4V6Z" fill="currentColor"/>
                                     <path d="M4 10H16V12H4V10Z" fill="currentColor"/>
                                     <path d="M4 14H12V16H4V14Z" fill="currentColor"/>
                                 </svg>
-                                3D 제품 구성 시작
+                                <span>견적 요청 시작</span>
                             </button>
-                            <a href="mailto:contact@pure-flon.com?subject=빠른 견적 요청" class="btn btn--outline btn--lg">
-                                빠른 견적 받기
+                            <a href="/products" class="btn btn--outline btn--lg">
+                                <span>제품 둘러보기</span>
+                                <svg class="btn__icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
                             </a>
                         </div>
-                        <p id="quote-description" class="sr-only">맞춤형 PTFE 튜브 견적을 위한 3D 구성 도구를 시작합니다</p>
-                        
-                        <!-- 성과 지표 -->
-                        <div class="hero__stats" itemscope itemtype="https://schema.org/Dataset">
-                            <div class="stat" itemprop="distribution" itemscope itemtype="https://schema.org/DataDownload">
-                                <span class="stat__number" itemprop="name">25+</span>
+                        <div class="hero__stats" role="region" aria-label="회사 통계">
+                            <div class="stat">
+                                <span class="stat__number" data-count="25">25+</span>
                                 <span class="stat__label">년 경험</span>
                             </div>
-                            <div class="stat" itemprop="distribution" itemscope itemtype="https://schema.org/DataDownload">
-                                <span class="stat__number" itemprop="name">10,000+</span>
+                            <div class="stat">
+                                <span class="stat__number" data-count="10000">10,000+</span>
                                 <span class="stat__label">글로벌 고객</span>
                             </div>
-                            <div class="stat" itemprop="distribution" itemscope itemtype="https://schema.org/DataDownload">
-                                <span class="stat__number" itemprop="name">99.9%</span>
+                            <div class="stat">
+                                <span class="stat__number" data-count="99.9">99.9%</span>
                                 <span class="stat__label">품질 보증</span>
                             </div>
                         </div>
@@ -475,33 +386,29 @@
                     
                     <div class="hero__visual">
                         <div class="hero__image">
-                            <!-- 차세대 이미지 포맷 -->
                             <picture>
-                                <source srcset="images/hero-ptfe-tubes.avif" type="image/avif">
-                                <source srcset="images/hero-ptfe-tubes.webp" type="image/webp">
-                                <img src="images/hero-ptfe-tubes.jpg" 
-                                     alt="Pure-Flon PTFE 튜브 제품군 - 의료용, 반도체용, 화학용" 
-                                     width="600" 
-                                     height="400" 
-                                     loading="eager"
-                                     fetchpriority="high"
-                                     itemprop="image">
+                                <source media="(min-width: 1024px)" srcset="/images/hero-ptfe-tubes-1200w.webp 1200w, /images/hero-ptfe-tubes-800w.webp 800w" sizes="50vw">
+                                <source media="(min-width: 768px)" srcset="/images/hero-ptfe-tubes-768w.webp 768w" sizes="100vw">
+                                <img src="/images/hero-ptfe-tubes-fallback.jpg" 
+                                     alt="Pure-Flon 고품질 PTFE 튜브 제품 라인업 - 의료용, 반도체용, 화학용" 
+                                     width="600" height="400" 
+                                     loading="eager" 
+                                     decoding="async"
+                                     fetchpriority="high">
                             </picture>
                         </div>
-                        
-                        <!-- 플로팅 카드 애니메이션 -->
                         <div class="hero__floating-cards" aria-hidden="true">
                             <div class="floating-card floating-card--medical">
-                                <div class="floating-card__icon">🏥</div>
-                                <div class="floating-card__text">FDA 승인</div>
+                                <div class="floating-card__icon" role="img" aria-label="의료">🏥</div>
+                                <div class="floating-card__text">의료용</div>
                             </div>
                             <div class="floating-card floating-card--semiconductor">
-                                <div class="floating-card__icon">💾</div>
-                                <div class="floating-card__text">99.99% 순도</div>
+                                <div class="floating-card__icon" role="img" aria-label="반도체">💾</div>
+                                <div class="floating-card__text">반도체용</div>
                             </div>
                             <div class="floating-card floating-card--chemical">
-                                <div class="floating-card__icon">⚗️</div>
-                                <div class="floating-card__text">200+ 화학물질</div>
+                                <div class="floating-card__icon" role="img" aria-label="화학">⚗️</div>
+                                <div class="floating-card__text">화학용</div>
                             </div>
                         </div>
                     </div>
@@ -509,399 +416,559 @@
             </div>
         </section>
 
-        <!-- 나머지 섹션들은 기존과 동일하지만 접근성과 SEO 개선 -->
-        <!-- ... (기존 sections) ... -->
-        
-    </main>
-
-    </div> <!-- Organization schema 끝 -->
-    
-    <!-- 향상된 모달 시스템 -->
-    <div id="quote-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" tabindex="-1">
-        <div class="modal__backdrop" data-modal-close></div>
-        <div class="modal__container">
-            <div class="modal__content">
-                <!-- 모달 헤더 -->
-                <div class="modal__header">
-                    <h2 id="modal-title" class="modal__title">
-                        PTFE 튜브 맞춤 견적
-                        <span class="modal__subtitle">전문가와 함께 최적의 솔루션을 찾아보세요</span>
-                    </h2>
-                    <button class="modal__close" data-modal-close aria-label="모달 닫기">
-                        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                </div>
+        <!-- Features Section -->
+        <section id="features" class="features" aria-labelledby="features-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="features-title" class="section-title">왜 Pure-Flon을 선택해야 할까요?</h2>
+                    <p class="section-description">
+                        25년 경험과 최첨단 기술로 동아시아 시장 최고의 PTFE 솔루션을 제공합니다.
+                    </p>
+                </header>
                 
-                <!-- 진행 표시기 -->
-                <div class="modal__progress">
-                    <div class="progress-indicator">
-                        <div class="progress-steps">
-                            <div class="step active" data-step="1">
-                                <span class="step-number">1</span>
-                                <span class="step-label">용도 선택</span>
+                <div class="features__grid">
+                    <article class="feature-card animate-on-scroll">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48">
+                                <path d="M24 4L36 16V40H12V16L24 4Z" stroke="currentColor" stroke-width="3" fill="none"/>
+                                <path d="M18 20H30V24H18V20Z" fill="currentColor"/>
+                                <path d="M18 28H30V32H18V28Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">고급 견적 시스템</h3>
+                        <p class="feature-card__description">
+                            업계 최초 실시간 견적 계산기로 즉시 가격을 확인하고 맞춤형 솔루션을 받아보세요.
+                        </p>
+                        <button class="feature-card__link" onclick="PureFlonApp.quoteSystem.showQuoteModal()">
+                            견적 시작하기 →
+                        </button>
+                    </article>
+                    
+                    <article class="feature-card animate-on-scroll">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48">
+                                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="3" fill="none"/>
+                                <path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">99.9% 품질 보증</h3>
+                        <p class="feature-card__description">
+                            FDA, ISO, CE 인증으로 검증된 최고 품질의 PTFE 튜브를 제공합니다.
+                        </p>
+                        <a href="/quality-certifications" class="feature-card__link">
+                            인증서 보기 →
+                        </a>
+                    </article>
+                    
+                    <article class="feature-card animate-on-scroll">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48">
+                                <path d="M8 16L24 8L40 16V32L24 40L8 32V16Z" stroke="currentColor" stroke-width="3" fill="none"/>
+                                <path d="M24 8V40" stroke="currentColor" stroke-width="3"/>
+                                <path d="M8 16L40 32" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">24시간 글로벌 지원</h3>
+                        <p class="feature-card__description">
+                            9개 언어 지원과 현지 기술팀으로 언제나 빠른 지원을 받으세요.
+                        </p>
+                        <a href="/support" class="feature-card__link">
+                            지원 받기 →
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products" aria-labelledby="products-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="products-title" class="section-title">산업별 전문 솔루션</h2>
+                    <p class="section-description">
+                        각 산업의 까다로운 요구사항에 맞춘 특수 설계된 PTFE 튜브를 제공합니다.
+                    </p>
+                </header>
+                
+                <div class="products__grid">
+                    <!-- Medical PTFE -->
+                    <article class="product-card animate-on-scroll" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-card__image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="/images/medical-ptfe-tubes-400w.webp 400w" type="image/webp">
+                                <img src="/images/medical-ptfe-tubes-400x250.jpg" 
+                                     alt="FDA 승인 의료용 PTFE 튜브 - 카테터, 수술기구용" 
+                                     width="400" height="250" 
+                                     loading="lazy" 
+                                     decoding="async"
+                                     itemprop="image">
+                            </picture>
+                            <div class="product-card__badge">FDA 승인</div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title" itemprop="name">의료용 PTFE 튜브</h3>
+                            <p class="product-card__description" itemprop="description">
+                                카테터, 수술 기구, 진단 장비를 위한 생체 적합성 PTFE 튜브. USP Class VI 인증.
+                            </p>
+                            <div class="product-card__specs">
+                                <div class="spec">
+                                    <span class="spec__label">순도</span>
+                                    <span class="spec__value">99.9%</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec__label">온도 범위</span>
+                                    <span class="spec__value">-270°C ~ 260°C</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec__label">내경 범위</span>
+                                    <span class="spec__value">0.5mm ~ 50mm</span>
+                                </div>
                             </div>
-                            <div class="step" data-step="2">
-                                <span class="step-number">2</span>
-                                <span class="step-label">사양 입력</span>
-                            </div>
-                            <div class="step" data-step="3">
-                                <span class="step-number">3</span>
-                                <span class="step-label">연락처</span>
-                            </div>
-                            <div class="step" data-step="4">
-                                <span class="step-number">4</span>
-                                <span class="step-label">완료</span>
+                            <div class="product-card__actions">
+                                <a href="/products/medical" class="btn btn--primary">상세 보기</a>
+                                <button class="btn btn--outline" onclick="PureFlonApp.quoteSystem.showQuoteModal('medical')">견적 요청</button>
                             </div>
                         </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 25%"></div>
+                    </article>
+                    
+                    <!-- Semiconductor PTFE -->
+                    <article class="product-card animate-on-scroll" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-card__image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="/images/semiconductor-ptfe-tubes-400w.webp 400w" type="image/webp">
+                                <img src="/images/semiconductor-ptfe-tubes-400x250.jpg" 
+                                     alt="반도체용 초고순도 PTFE 튜브 - 웨이퍼 제조용" 
+                                     width="400" height="250" 
+                                     loading="lazy" 
+                                     decoding="async"
+                                     itemprop="image">
+                            </picture>
+                            <div class="product-card__badge">정전기 방지</div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title" itemprop="name">반도체용 PTFE 튜브</h3>
+                            <p class="product-card__description" itemprop="description">
+                                웨이퍼 제조, 식각 공정을 위한 초고순도 PTFE 튜브. 파티클 프리 보장.
+                            </p>
+                            <div class="product-card__specs">
+                                <div class="spec">
+                                    <span class="spec__label">순도</span>
+                                    <span class="spec__value">99.99%</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec__label">파티클</span>
+                                    <span class="spec__value">< 0.1 μm</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec__label">정전기 방지</span>
+                                    <span class="spec__value">10⁶ Ω·cm</span>
+                                </div>
+                            </div>
+                            <div class="product-card__actions">
+                                <a href="/products/semiconductor" class="btn btn--primary">상세 보기</a>
+                                <button class="btn btn--outline" onclick="PureFlonApp.quoteSystem.showQuoteModal('semiconductor')">견적 요청</button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Chemical PTFE -->
+                    <article class="product-card animate-on-scroll" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-card__image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="/images/chemical-ptfe-tubes-400w.webp 400w" type="image/webp">
+                                <img src="/images/chemical-ptfe-tubes-400x250.jpg" 
+                                     alt="화학용 내화학성 PTFE 튜브 - 강산, 강염기 내성" 
+                                     width="400" height="250" 
+                                     loading="lazy" 
+                                     decoding="async"
+                                     itemprop="image">
+                            </picture>
+                            <div class="product-card__badge">내화학성</div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title" itemprop="name">화학용 PTFE 튜브</h3>
+                            <p class="product-card__description" itemprop="description">
+                                강산, 강염기, 유기용매에 완전 내성. 화학 반응기 및 분석 장비용.
+                            </p>
+                            <div class="product-card__specs">
+                                <div class="spec">
+                                    <span class="spec__label">화학 호환성</span>
+                                    <span class="spec__value">200+ 화학물질</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec__label">최대 압력</span>
+                                    <span class="spec__value">150 bar</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec__label">온도 범위</span>
+                                    <span class="spec__value">-50°C ~ 200°C</span>
+                                </div>
+                            </div>
+                            <div class="product-card__actions">
+                                <a href="/products/chemical" class="btn btn--primary">상세 보기</a>
+                                <button class="btn btn--outline" onclick="PureFlonApp.quoteSystem.showQuoteModal('chemical')">견적 요청</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Markets Section -->
+        <section id="markets" class="markets" aria-labelledby="markets-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="markets-title" class="section-title">동아시아 전역의 신뢰받는 파트너</h2>
+                    <p class="section-description">
+                        현지 문화와 비즈니스 관습을 이해하는 지역 전문팀이 최적의 솔루션을 제공합니다.
+                    </p>
+                </header>
+                
+                <div class="markets__grid">
+                    <article class="market-card animate-on-scroll">
+                        <div class="market-card__flag" role="img" aria-label="일본">🇯🇵</div>
+                        <h3 class="market-card__title">일본</h3>
+                        <p class="market-card__description">
+                            정밀 제조업과 품질 관리의 본고장. 일본 고객의 까다로운 품질 기준에 맞춘 프리미엄 솔루션.
+                        </p>
+                        <div class="market-card__features">
+                            <span class="feature-tag">JIS 규격 준수</span>
+                            <span class="feature-tag">현지 기술 지원</span>
+                            <span class="feature-tag">일본어 서비스</span>
+                        </div>
+                        <a href="/markets/japan" class="market-card__link">
+                            일본 시장 문의 →
+                        </a>
+                    </article>
+                    
+                    <article class="market-card animate-on-scroll">
+                        <div class="market-card__flag" role="img" aria-label="한국">🇰🇷</div>
+                        <h3 class="market-card__title">한국</h3>
+                        <p class="market-card__description">
+                            세계 최고 수준의 반도체와 디스플레이 산업. 혁신적인 기술과 빠른 대응으로 파트너십 구축.
+                        </p>
+                        <div class="market-card__features">
+                            <span class="feature-tag">KS 규격 준수</span>
+                            <span class="feature-tag">당일 배송</span>
+                            <span class="feature-tag">24/7 지원</span>
+                        </div>
+                        <a href="/markets/korea" class="market-card__link">
+                            한국 시장 문의 →
+                        </a>
+                    </article>
+                    
+                    <article class="market-card animate-on-scroll">
+                        <div class="market-card__flag" role="img" aria-label="대만">🇹🇼</div>
+                        <h3 class="market-card__title">대만</h3>
+                        <p class="market-card__description">
+                            글로벌 반도체 허브이자 정밀 기계의 중심지. 대만 기업의 혁신적 요구사항에 맞춤형 대응.
+                        </p>
+                        <div class="market-card__features">
+                            <span class="feature-tag">CNS 규격 준수</span>
+                            <span class="feature-tag">번체중국어</span>
+                            <span class="feature-tag">현지 재고</span>
+                        </div>
+                        <a href="/markets/taiwan" class="market-card__link">
+                            대만 시장 문의 →
+                        </a>
+                    </article>
+                    
+                    <article class="market-card animate-on-scroll">
+                        <div class="market-card__flag" role="img" aria-label="동남아시아">🌏</div>
+                        <h3 class="market-card__title">동남아시아</h3>
+                        <p class="market-card__description">
+                            급성장하는 제조업 허브. 태국, 베트남, 인도네시아, 말레이시아의 다양한 산업 요구사항 지원.
+                        </p>
+                        <div class="market-card__features">
+                            <span class="feature-tag">다국어 지원</span>
+                            <span class="feature-tag">현지 파트너십</span>
+                            <span class="feature-tag">경쟁력 있는 가격</span>
+                        </div>
+                        <a href="/markets/southeast-asia" class="market-card__link">
+                            동남아시아 문의 →
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote CTA Section -->
+        <section class="quote-cta" aria-labelledby="quote-title">
+            <div class="container">
+                <div class="quote-cta__content">
+                    <h2 id="quote-title" class="quote-cta__title">
+                        프로젝트에 맞는 정확한 견적을 받아보세요
+                    </h2>
+                    <p class="quote-cta__description">
+                        5분 만에 완료되는 간편한 견적 시스템으로 24시간 내에 정확한 가격과 납기를 확인하세요.
+                    </p>
+                    <div class="quote-cta__actions">
+                        <button class="btn btn--primary btn--lg quote-btn" onclick="PureFlonApp.quoteSystem.showQuoteModal()">
+                            <svg class="btn__icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M4 6H16V8H4V6Z" fill="currentColor"/>
+                                <path d="M4 10H16V12H4V10Z" fill="currentColor"/>
+                                <path d="M4 14H12V16H4V14Z" fill="currentColor"/>
+                            </svg>
+                            견적 요청하기
+                        </button>
+                        <a href="/samples" class="btn btn--outline btn--lg">
+                            샘플 요청하기
+                        </a>
+                    </div>
+                    <div class="quote-cta__features" role="list">
+                        <div class="feature" role="listitem">
+                            <svg class="feature__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2L22 7V17L12 22L2 17V7L12 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M12 8V16" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 10L16 14" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>24시간 내 응답</span>
+                        </div>
+                        <div class="feature" role="listitem">
+                            <svg class="feature__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                            <span>무료 기술 상담</span>
+                        </div>
+                        <div class="feature" role="listitem">
+                            <svg class="feature__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M21 16V8A2 2 0 0 0 19 6H5A2 2 0 0 0 3 8V16A2 2 0 0 0 5 18H19A2 2 0 0 0 21 16Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M7 10L12 13L17 10" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                            <span>맞춤형 솔루션</span>
                         </div>
                     </div>
                 </div>
-                
-                <!-- 모달 본문 -->
-                <div class="modal__body">
-                    <p id="modal-description" class="modal__description">
-                        귀하의 요구사항에 맞는 정확한 견적을 제공하기 위해 몇 가지 정보가 필요합니다.
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="testimonials-title" class="section-title">고객들이 말하는 Pure-Flon</h2>
+                    <p class="section-description">
+                        동아시아 주요 기업들이 Pure-Flon을 선택하는 이유를 확인해보세요.
                     </p>
+                </header>
+                
+                <div class="testimonials__grid">
+                    <article class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-card__content">
+                            <blockquote class="testimonial-card__quote">
+                                "Pure-Flon의 PTFE 튜브 덕분에 제품 불량률이 98% 감소했습니다. 특히 일본 현지 기술팀의 빠른 대응이 인상적이었어요."
+                            </blockquote>
+                            <div class="testimonial-card__author">
+                                <div class="author__info">
+                                    <div class="author__name">사토 타케시</div>
+                                    <div class="author__title">품질관리 부장, 일본 정밀기계 회사</div>
+                                </div>
+                                <div class="author__flag" role="img" aria-label="일본">🇯🇵</div>
+                            </div>
+                        </div>
+                    </article>
                     
-                    <form id="quote-form" class="quote-form" novalidate>
-                        <!-- 1단계: 용도 선택 -->
-                        <div class="form-step active" data-step="1">
-                            <h3 class="step-title">어떤 용도로 사용하시나요?</h3>
-                            <div class="application-selector">
-                                <label class="application-card">
-                                    <input type="radio" name="application" value="medical" required>
-                                    <div class="card-content">
-                                        <div class="card-icon">🏥</div>
-                                        <h4>의료용</h4>
-                                        <p>카테터, 수술기구, 진단장비</p>
-                                        <div class="card-features">
-                                            <span class="feature-tag">FDA 승인</span>
-                                            <span class="feature-tag">생체 적합성</span>
-                                        </div>
-                                    </div>
-                                </label>
-                                
-                                <label class="application-card">
-                                    <input type="radio" name="application" value="semiconductor" required>
-                                    <div class="card-content">
-                                        <div class="card-icon">💾</div>
-                                        <h4>반도체용</h4>
-                                        <p>웨이퍼 제조, 식각 공정, CVD/PVD</p>
-                                        <div class="card-features">
-                                            <span class="feature-tag">99.99% 순도</span>
-                                            <span class="feature-tag">파티클 프리</span>
-                                        </div>
-                                    </div>
-                                </label>
-                                
-                                <label class="application-card">
-                                    <input type="radio" name="application" value="chemical" required>
-                                    <div class="card-content">
-                                        <div class="card-icon">⚗️</div>
-                                        <h4>화학용</h4>
-                                        <p>화학 반응기, 분석 장비, 배관</p>
-                                        <div class="card-features">
-                                            <span class="feature-tag">내화학성</span>
-                                            <span class="feature-tag">고압 지원</span>
-                                        </div>
-                                    </div>
-                                </label>
-                                
-                                <label class="application-card">
-                                    <input type="radio" name="application" value="custom" required>
-                                    <div class="card-content">
-                                        <div class="card-icon">🔧</div>
-                                        <h4>맞춤형</h4>
-                                        <p>특수 요구사항, 신규 응용분야</p>
-                                        <div class="card-features">
-                                            <span class="feature-tag">전용 설계</span>
-                                            <span class="feature-tag">기술 상담</span>
-                                        </div>
-                                    </div>
-                                </label>
+                    <article class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-card__content">
+                            <blockquote class="testimonial-card__quote">
+                                "반도체 공정에서 요구되는 까다로운 조건을 완벽하게 충족시켜주었습니다. 실시간 견적 시스템으로 사전 검증할 수 있어서 매우 효율적이었어요."
+                            </blockquote>
+                            <div class="testimonial-card__author">
+                                <div class="author__info">
+                                    <div class="author__name">김영수</div>
+                                    <div class="author__title">공정 엔지니어, 대한민국 반도체 회사</div>
+                                </div>
+                                <div class="author__flag" role="img" aria-label="한국">🇰🇷</div>
                             </div>
                         </div>
-                        
-                        <!-- 2단계: 사양 입력 -->
-                        <div class="form-step" data-step="2">
-                            <h3 class="step-title">제품 사양을 입력해주세요</h3>
-                            <div class="form-grid">
-                                <div class="form-group">
-                                    <label for="inner-diameter" class="form-label">
-                                        내경 (mm)
-                                        <span class="required" aria-label="필수">*</span>
-                                    </label>
-                                    <input type="number" 
-                                           id="inner-diameter" 
-                                           name="innerDiameter" 
-                                           class="form-input"
-                                           min="0.5" 
-                                           max="100" 
-                                           step="0.1"
-                                           required
-                                           aria-describedby="inner-diameter-help">
-                                    <div id="inner-diameter-help" class="form-help">
-                                        0.5mm ~ 100mm 범위에서 입력 가능
-                                    </div>
+                    </article>
+                    
+                    <article class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-card__content">
+                            <blockquote class="testimonial-card__quote">
+                                "글로벌 표준을 충족하면서도 대만 현지 상황에 맞춘 서비스가 훌륭했습니다. 24시간 지원 덕분에 생산 중단 없이 프로젝트를 완료했어요."
+                            </blockquote>
+                            <div class="testimonial-card__author">
+                                <div class="author__info">
+                                    <div class="author__name">陳建明</div>
+                                    <div class="author__title">생산팀장, 대만 전자부품 회사</div>
                                 </div>
-                                
-                                <div class="form-group">
-                                    <label for="wall-thickness" class="form-label">
-                                        벽두께 (mm)
-                                        <span class="required" aria-label="필수">*</span>
-                                    </label>
-                                    <input type="number" 
-                                           id="wall-thickness" 
-                                           name="wallThickness" 
-                                           class="form-input"
-                                           min="0.25" 
-                                           max="10" 
-                                           step="0.1"
-                                           required
-                                           aria-describedby="wall-thickness-help">
-                                    <div id="wall-thickness-help" class="form-help">
-                                        0.25mm ~ 10mm 범위에서 입력 가능
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="length" class="form-label">
-                                        길이 (m)
-                                        <span class="required" aria-label="필수">*</span>
-                                    </label>
-                                    <input type="number" 
-                                           id="length" 
-                                           name="length" 
-                                           class="form-input"
-                                           min="1" 
-                                           max="2000" 
-                                           required
-                                           aria-describedby="length-help">
-                                    <div id="length-help" class="form-help">
-                                        최소 주문량: 100m
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="quantity" class="form-label">
-                                        수량
-                                        <span class="required" aria-label="필수">*</span>
-                                    </label>
-                                    <input type="number" 
-                                           id="quantity" 
-                                           name="quantity" 
-                                           class="form-input"
-                                           min="1" 
-                                           required
-                                           aria-describedby="quantity-help">
-                                    <div id="quantity-help" class="form-help">
-                                        필요한 수량을 입력하세요
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="special-requirements" class="form-label">
-                                    특수 요구사항 (선택사항)
-                                </label>
-                                <textarea id="special-requirements" 
-                                          name="specialRequirements" 
-                                          class="form-textarea"
-                                          rows="4"
-                                          placeholder="온도 범위, 화학물질 호환성, 인증 요구사항 등을 입력해주세요"
-                                          aria-describedby="special-requirements-help"></textarea>
-                                <div id="special-requirements-help" class="form-help">
-                                    추가 요구사항이 있으시면 상세히 작성해주세요
-                                </div>
+                                <div class="author__flag" role="img" aria-label="대만">🇹🇼</div>
                             </div>
                         </div>
-                        
-                        <!-- 3단계: 연락처 정보 -->
-                        <div class="form-step" data-step="3">
-                            <h3 class="step-title">연락처 정보를 입력해주세요</h3>
-                            <div class="form-grid">
-                                <div class="form-group">
-                                    <label for="company-name" class="form-label">
-                                        회사명
-                                        <span class="required" aria-label="필수">*</span>
-                                    </label>
-                                    <input type="text" 
-                                           id="company-name" 
-                                           name="companyName" 
-                                           class="form-input"
-                                           required
-                                           autocomplete="organization">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="contact-name" class="form-label">
-                                        담당자명
-                                        <span class="required" aria-label="필수">*</span>
-                                    </label>
-                                    <input type="text" 
-                                           id="contact-name" 
-                                           name="contactName" 
-                                           class="form-input"
-                                           required
-                                           autocomplete="name">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="email" class="form-label">
-                                        이메일
-                                        <span class="required" aria-label="필수">*</span>
-                                    </label>
-                                    <input type="email" 
-                                           id="email" 
-                                           name="email" 
-                                           class="form-input"
-                                           required
-                                           autocomplete="email"
-                                           aria-describedby="email-help">
-                                    <div id="email-help" class="form-help">
-                                        견적서를 받을 이메일 주소
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="phone" class="form-label">
-                                        연락처
-                                    </label>
-                                    <input type="tel" 
-                                           id="phone" 
-                                           name="phone" 
-                                           class="form-input"
-                                           autocomplete="tel"
-                                           aria-describedby="phone-help">
-                                    <div id="phone-help" class="form-help">
-                                        빠른 상담을 위한 연락처 (선택사항)
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="delivery-date" class="form-label">
-                                    희망 납기일
-                                </label>
-                                <input type="date" 
-                                       id="delivery-date" 
-                                       name="deliveryDate" 
-                                       class="form-input"
-                                       min=""
-                                       aria-describedby="delivery-date-help">
-                                <div id="delivery-date-help" class="form-help">
-                                    제품이 필요한 날짜를 선택하세요
-                                </div>
-                            </div>
-                            
-                            <!-- 개인정보 처리 동의 -->
-                            <div class="form-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" 
-                                           id="privacy-consent" 
-                                           name="privacyConsent" 
-                                           required
-                                           aria-describedby="privacy-consent-text">
-                                    <span class="checkbox-custom"></span>
-                                    <span id="privacy-consent-text">
-                                        <strong>개인정보 수집·이용에 동의합니다</strong>
-                                        <span class="required" aria-label="필수">*</span>
-                                        <br>
-                                        <small>견적 제공 목적으로만 사용되며, 동의 철회 시 처리가 중단됩니다.</small>
-                                    </span>
-                                </label>
-                            </div>
-                        </div>
-                        
-                        <!-- 4단계: 완료 -->
-                        <div class="form-step" data-step="4">
-                            <div class="completion-message">
-                                <div class="completion-icon">
-                                    <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
-                                        <circle cx="32" cy="32" r="30" fill="#27ae60" opacity="0.1"/>
-                                        <path d="M20 32L28 40L44 24" stroke="#27ae60" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <h3 class="completion-title">견적 요청이 완료되었습니다!</h3>
-                                <p class="completion-description">
-                                    전문 엔지니어가 귀하의 요구사항을 검토하고 24시간 내에 상세한 견적서를 이메일로 발송해드립니다.
-                                </p>
-                                <div class="completion-next-steps">
-                                    <h4>다음 단계:</h4>
-                                    <ul>
-                                        <li>✓ 24시간 내 견적서 발송</li>
-                                        <li>✓ 기술 상담 일정 조율</li>
-                                        <li>✓ 샘플 제공 (필요시)</li>
-                                        <li>✓ 맞춤형 솔루션 제안</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="/images/logo-white.svg" alt="Pure-Flon" width="160" height="36" loading="lazy">
+                    </div>
+                    <p class="footer__description">
+                        동아시아 시장을 선도하는 프리미엄 PTFE 튜브 제조업체로, 
+                        의료, 반도체, 화학 산업에 최고 품질의 솔루션을 제공합니다.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://linkedin.com/company/pure-flon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M16 8A6 6 0 0 0 4 14V18H8V14A2 2 0 0 1 12 14V18H16V8Z" fill="currentColor"/>
+                                <circle cx="6" cy="6" r="2" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/pureflon" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M6 4H14L18 8V16H2V8L6 4Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:contact@pure-flon.com" aria-label="이메일">
+                            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M3 4H17V16H3V4Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M3 4L10 11L17 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 
-                <!-- 모달 푸터 -->
-                <div class="modal__footer">
-                    <div class="form-actions">
-                        <button type="button" class="btn btn--outline" id="prev-step" style="display: none;">
-                            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-                                <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h3 class="footer__title">제품</h3>
+                        <ul class="footer__menu">
+                            <li><a href="/products/medical">의료용 PTFE 튜브</a></li>
+                            <li><a href="/products/semiconductor">반도체용 PTFE 튜브</a></li>
+                            <li><a href="/products/chemical">화학용 PTFE 튜브</a></li>
+                            <li><a href="/products/industrial">산업용 PTFE 튜브</a></li>
+                            <li><a href="/products/custom">맞춤형 솔루션</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h3 class="footer__title">시장</h3>
+                        <ul class="footer__menu">
+                            <li><a href="/markets/japan">🇯🇵 일본</a></li>
+                            <li><a href="/markets/korea">🇰🇷 한국</a></li>
+                            <li><a href="/markets/taiwan">🇹🇼 대만</a></li>
+                            <li><a href="/markets/china">🇨🇳 중국</a></li>
+                            <li><a href="/markets/southeast-asia">🌏 동남아시아</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h3 class="footer__title">회사</h3>
+                        <ul class="footer__menu">
+                            <li><a href="/about">회사소개</a></li>
+                            <li><a href="/quality">품질 & 인증</a></li>
+                            <li><a href="/careers">채용정보</a></li>
+                            <li><a href="/news">뉴스</a></li>
+                            <li><a href="/investors">투자자 정보</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h3 class="footer__title">지원</h3>
+                        <ul class="footer__menu">
+                            <li><a href="/support">고객 지원</a></li>
+                            <li><a href="/customer-portal">고객 포털</a></li>
+                            <li><a href="/downloads">다운로드</a></li>
+                            <li><a href="/technical-docs">기술 문서</a></li>
+                            <li><a href="/contact">연락처</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__legal">
+                    <p>&copy; 2025 Pure-Flon Co., Ltd. All rights reserved.</p>
+                    <div class="footer__legal-links">
+                        <a href="/privacy">개인정보처리방침</a>
+                        <a href="/terms">이용약관</a>
+                        <a href="/cookies">쿠키 정책</a>
+                        <a href="/accessibility">접근성 정책</a>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M8 1L15 6V14H1V6L8 1Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M1 6L8 10L15 6" stroke="currentColor" stroke-width="1.5" fill="none"/>
                             </svg>
-                            이전
-                        </button>
-                        
-                        <button type="button" class="btn btn--primary" id="next-step">
-                            다음
-                            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-                                <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <a href="mailto:contact@pure-flon.com">contact@pure-flon.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M15.5 10.5A1.5 1.5 0 0 1 14 12H2A1.5 1.5 0 0 1 .5 10.5V5.5A1.5 1.5 0 0 1 2 4H14A1.5 1.5 0 0 1 15.5 5.5Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M6 8L8 9L10 8" stroke="currentColor" stroke-width="1.5" fill="none"/>
                             </svg>
-                        </button>
-                        
-                        <button type="submit" class="btn btn--primary" id="submit-quote" style="display: none;">
-                            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-                                <path d="M14 2L6 10L2 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
-                            </svg>
-                            견적 요청 제출
-                        </button>
-                        
-                        <button type="button" class="btn btn--primary" id="close-modal" style="display: none;" data-modal-close>
-                            닫기
-                        </button>
+                            <span>+82-32-123-4567</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
     
-    <!-- Footer (기존과 동일하지만 구조화된 데이터 추가) -->
-    <!-- ... -->
+    <!-- Performance Monitoring -->
+    <script>
+        // Core Web Vitals 측정
+        function measureCoreWebVitals() {
+            if ('performance' in window) {
+                // LCP 측정
+                new PerformanceObserver((list) => {
+                    const entries = list.getEntries();
+                    const lastEntry = entries[entries.length - 1];
+                    console.log('LCP:', lastEntry.startTime);
+                }).observe({ entryTypes: ['largest-contentful-paint'] });
+
+                // CLS 측정
+                let clsValue = 0;
+                new PerformanceObserver((list) => {
+                    for (const entry of list.getEntries()) {
+                        if (!entry.hadRecentInput) {
+                            clsValue += entry.value;
+                            console.log('CLS:', clsValue);
+                        }
+                    }
+                }).observe({ entryTypes: ['layout-shift'] });
+
+                // INP 측정 (2024년 새로운 지표)
+                new PerformanceObserver((list) => {
+                    const entries = list.getEntries();
+                    entries.forEach((entry) => {
+                        console.log('INP:', entry.duration);
+                    });
+                }).observe({ entryTypes: ['event'] });
+            }
+        }
+
+        // DOM 로드 완료 후 측정 시작
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', measureCoreWebVitals);
+        } else {
+            measureCoreWebVitals();
+        }
+    </script>
     
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="/js/main.js" defer></script>
     
-    <!-- Service Worker 등록 -->
+    <!-- Service Worker 등록 (PWA) -->
     <script>
-        if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
+        if ('serviceWorker' in navigator && location.protocol === 'https:') {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/sw.js')
-                    .then(registration => console.log('✅ SW registered'))
+                    .then(registration => console.log('✅ SW registered:', registration))
                     .catch(error => console.log('❌ SW registration failed:', error));
             });
         }
-        
-        // 오늘 날짜를 minimum으로 설정
-        document.addEventListener('DOMContentLoaded', () => {
-            const deliveryDateInput = document.getElementById('delivery-date');
-            if (deliveryDateInput) {
-                const today = new Date().toISOString().split('T')[0];
-                deliveryDateInput.min = today;
-            }
-        });
     </script>
 </body>
 </html>
