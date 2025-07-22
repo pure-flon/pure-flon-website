@@ -1,0 +1,65 @@
+# Pure-Flon PTFE 튜브 웹사이트 - robots.txt
+# 검색 엔진 크롤링 최적화 설정
+
+User-agent: *
+Allow: /
+
+# 주요 페이지 우선순위 높임
+Allow: /products/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# 관리자 및 임시 파일 차단
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.tmp$
+Disallow: /*?*utm_*
+Disallow: /*?*ref=
+Disallow: /*?*gclid=
+
+# 중복 콘텐츠 방지
+Disallow: /*/amp/
+Disallow: /*?print=1
+Disallow: /*?share=
+
+# 사이트맵 위치 명시
+Sitemap: https://pure-flon.com/sitemap.xml
+
+# 크롤링 속도 조절 (선택사항)
+Crawl-delay: 1
+
+# 특정 검색엔진 최적화
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# 스팸봇 차단
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# 소셜 미디어 봇 허용
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# 주요 제품 페이지 우선 크롤링 가이드
+# 의료용 PTFE 튜브: /products/medical.html
+# 반도체용 PTFE 튜브: /products/semiconductor.html
+# 화학용 PTFE 튜브: /products/chemical.html

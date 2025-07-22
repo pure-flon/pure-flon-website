@@ -138,26 +138,83 @@ SMTP_PASS=your-app-password
 
 ```
 pure-flon-website/
-├── 📄 index.html              # 메인 페이지
-├── 📄 sw.js                   # Service Worker
-├── 📄 robots.txt              # SEO 크롤러 가이드
-├── 📄 sitemap.xml             # 사이트맵
-├── 📄 site.webmanifest        # PWA 매니페스트
+├── 📄 index.html                    # 🔄 메인 홈페이지 (업데이트됨)
+├── 📄 404.html                      # ✅ 커스텀 404 페이지 (신규)
+├── 📄 robots.txt                    # ✅ SEO 크롤러 정책 (신규)
+├── 📄 sitemap.xml                   # ✅ XML 사이트맵 (신규)
+├── 📄 sw.js                         # ✅ Service Worker (신규)
+├── 📄 _headers                      # ✅ Vercel 보안 헤더 (신규)
+├── 📄 site.webmanifest             # 🔄 PWA 매니페스트 (업데이트됨)
+├── 📄 vercel.json                   # 🔄 Vercel 배포 설정 (업데이트됨)
+├── 📄 package.json                  # ✅ NPM 패키지 설정 (신규)
+├── 📄 lighthouserc.js               # ✅ Lighthouse 성능 테스트 (신규)
+├── 📄 .htmlvalidate.json            # ✅ HTML 검증 설정 (신규)
+├── 📄 DEPLOYMENT_CHECKLIST.md       # ✅ 배포 가이드 (신규)
+├── 📄 .gitignore                    # ✅ Git 무시 파일 (신규)
+├── 📄 README.md                     # 📝 기존 파일 유지
+├── 📄 favicon.ico                   # 📝 기존 파일 유지
+├── 📄 apple-touch-icon.png          # 📝 기존 파일 유지
+├── 📄 favicon-16x16.png             # 📝 기존 파일 유지
+├── 📄 favicon-32x32.png             # 📝 기존 파일 유지
+│
 ├── 📁 css/
-│   └── 📄 main.css            # 통합 스타일시트
+│   ├── 📄 main.css                  # 🔄 통합 스타일시트 (대폭 업데이트)
+│   ├── 📄 main.min.css              # ✅ 압축된 CSS (빌드 시 생성)
+│   └── 📄 critical.css              # ✅ Critical CSS (향후 추가)
+│
 ├── 📁 js/
-│   └── 📄 main.js             # 통합 JavaScript
+│   ├── 📄 main.js                   # 🔄 메인 JavaScript (업데이트됨)
+│   ├── 📄 main.min.js               # ✅ 압축된 JS (빌드 시 생성)
+│   └── 📄 analytics.js              # ✅ 분석 스크립트 (향후 추가)
+│
 ├── 📁 images/
-│   ├── 📄 logo.svg            # 로고
-│   └── 📁 products/           # 제품 이미지
+│   ├── 📄 logo.svg                  # ⚠️ 실제 파일 필요
+│   ├── 📄 logo-white.svg            # ⚠️ 실제 파일 필요
+│   ├── 📄 ptfe-hero.avif            # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 ptfe-hero.webp            # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 ptfe-hero.jpg             # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 ptfe-hero-mobile.avif     # ⚠️ 실제 파일 필요 (400x300)
+│   ├── 📄 ptfe-hero-mobile.webp     # ⚠️ 실제 파일 필요 (400x300)
+│   ├── 📄 medical-ptfe-hero.avif    # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 medical-ptfe-hero.webp    # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 medical-ptfe-hero.jpg     # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 semiconductor-ptfe-hero.avif # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 semiconductor-ptfe-hero.webp # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 semiconductor-ptfe-hero.jpg  # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 chemical-ptfe-hero.avif   # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 chemical-ptfe-hero.webp   # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 chemical-ptfe-hero.jpg    # ⚠️ 실제 파일 필요 (600x400)
+│   ├── 📄 medical-ptfe.avif         # ⚠️ 실제 파일 필요 (400x250)
+│   ├── 📄 medical-ptfe.webp         # ⚠️ 실제 파일 필요 (400x250)
+│   ├── 📄 semiconductor-ptfe.avif   # ⚠️ 실제 파일 필요 (400x250)
+│   ├── 📄 semiconductor-ptfe.webp   # ⚠️ 실제 파일 필요 (400x250)
+│   ├── 📄 chemical-ptfe.avif        # ⚠️ 실제 파일 필요 (400x250)
+│   ├── 📄 chemical-ptfe.webp        # ⚠️ 실제 파일 필요 (400x250)
+│   └── 📁 optimized/                # ✅ 빌드 시 최적화된 이미지 저장
+│
 ├── 📁 products/
-│   ├── 📄 medical.html        # 의료용 제품
-│   ├── 📄 semiconductor.html  # 반도체용 제품
-│   └── 📄 chemical.html       # 화학용 제품
-├── 📁 api/                    # Vercel Functions
-├── 📁 tests/                  # 테스트 파일
-└── 📁 scripts/                # 빌드 스크립트
-```
+│   ├── 📄 medical.html              # 🔄 의료용 PTFE 제품 (업데이트됨)
+│   ├── 📄 semiconductor.html        # 🔄 반도체용 PTFE 제품 (업데이트됨)
+│   └── 📄 chemical.html             # 🔄 화학용 PTFE 제품 (업데이트됨)
+│
+├── 📁 api/                          # ✅ Vercel Functions (향후 구현)
+│   ├── 📄 quotes.js                 # ✅ 견적 요청 API (향후)
+│   ├── 📄 contact.js                # ✅ 연락처 API (향후)
+│   └── 📄 analytics.js              # ✅ 분석 데이터 API (향후)
+│
+├── 📁 tests/                        # ✅ 테스트 파일들
+│   ├── 📄 lighthouse.test.js        # ✅ 성능 테스트
+│   ├── 📄 accessibility.test.js     # ✅ 접근성 테스트
+│   └── 📄 seo.test.js               # ✅ SEO 테스트
+│
+├── 📁 scripts/                      # ✅ 빌드 및 유틸리티 스크립트
+│   ├── 📄 build.js                  # ✅ 빌드 스크립트
+│   ├── 📄 optimize-images.js        # ✅ 이미지 최적화
+│   └── 📄 generate-sitemap.js       # ✅ 사이트맵 생성
+│
+├── 📁 lighthouse-reports/           # ✅ 성능 테스트 결과 (자동 생성)
+├── 📁 dist/                         # ✅ 빌드 결과물 (자동 생성)
+└── 📁 node_modules/                 # ✅ NPM 의존성 (자동 생성)
 
 ## 🎨 디자인 시스템
 

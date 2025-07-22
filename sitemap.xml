@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        
+  <!-- 홈페이지 -->
+  <url>
+    <loc>https://pure-flon.com/</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://pure-flon.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://pure-flon.com/zh-cn/"/>
+    <image:image>
+      <image:loc>https://pure-flon.com/images/ptfe-hero.jpg</image:loc>
+      <image:title>Pure-Flon PTFE 튜브</image:title>
+      <image:caption>프리미엄 산업용 PTFE 튜브 제조업체</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 의료용 PTFE 튜브 -->
+  <url>
+    <loc>https://pure-flon.com/products/medical.html</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/products/medical.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/products/medical.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/products/medical.html"/>
+    <image:image>
+      <image:loc>https://pure-flon.com/images/medical-ptfe-hero.jpg</image:loc>
+      <image:title>의료용 PTFE 튜브</image:title>
+      <image:caption>FDA 승인된 생체 적합성 PTFE 튜브</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 반도체용 PTFE 튜브 -->
+  <url>
+    <loc>https://pure-flon.com/products/semiconductor.html</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/products/semiconductor.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/products/semiconductor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/products/semiconductor.html"/>
+    <image:image>
+      <image:loc>https://pure-flon.com/images/semiconductor-ptfe-hero.jpg</image:loc>
+      <image:title>반도체용 PTFE 튜브</image:title>
+      <image:caption>초고순도 파티클 프리 PTFE 튜브</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 화학용 PTFE 튜브 -->
+  <url>
+    <loc>https://pure-flon.com/products/chemical.html</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pure-flon.com/products/chemical.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pure-flon.com/ja/products/chemical.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pure-flon.com/en/products/chemical.html"/>
+    <image:image>
+      <image:loc>https://pure-flon.com/images/chemical-ptfe-hero.jpg</image:loc>
+      <image:title>화학용 PTFE 튜브</image:title>
+      <image:caption>내화학성 고압 PTFE 튜브</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 404 페이지 (색인하지 않음) -->
+  <url>
+    <loc>https://pure-flon.com/404.html</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+</urlset>
