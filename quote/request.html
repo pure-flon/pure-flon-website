@@ -1,60 +1,49 @@
 <!DOCTYPE html>
-<!-- 
-파일명: quote/request.html
-업데이트: 2025-01-22
-버전: v2.0.0 (완전한 B2B 견적 시스템)
--->
 <html lang="ko" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pure-Flon PTFE 튜브 견적 요청 - 의료용, 반도체용, 화학용 PTFE 튜브의 정확한 견적을 24시간 내에 받아보세요.">
-    <meta name="keywords" content="PTFE 튜브 견적, 테프론 튜브 가격, 산업용 튜브 견적, 의료용 튜브, 반도체용 튜브">
+    <meta name="description" content="Pure-Flon PTFE 제품 견적 요청 - 의료용, 반도체용, 화학용 PTFE 튜브 맞춤 견적을 받아보세요. 24시간 내 회신 보장.">
+    <meta name="keywords" content="PTFE 견적, 테프론 튜브 가격, B2B 견적, Pure-Flon, 맞춤 제작">
+    <meta name="robots" content="index, follow">
+    
+    <title>견적 요청 | Pure-Flon PTFE 제품</title>
     
     <!-- Open Graph -->
-    <meta property="og:title" content="PTFE 튜브 견적 요청 - Pure-Flon">
-    <meta property="og:description" content="전문가가 직접 계산하는 정확한 PTFE 튜브 견적을 받아보세요">
-    <meta property="og:image" content="https://pure-flon.com/images/quote-request-og.jpg">
-    <meta property="og:url" content="https://pure-flon.com/quote/request.html">
-    
-    <title>PTFE 튜브 견적 요청 | 24시간 내 응답 | Pure-Flon</title>
+    <meta property="og:title" content="Pure-Flon PTFE 제품 견적 요청">
+    <meta property="og:description" content="의료용, 반도체용, 화학용 PTFE 튜브 맞춤 견적을 받아보세요. 24시간 내 회신 보장.">
+    <meta property="og:image" content="../images/og-quote-request.jpg">
+    <meta property="og:url" content="https://pure-flon.com/quote/request">
+    <meta property="og:type" content="website">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://pure-flon.com/quote/request.html">
-    
     <!-- Preload Critical Resources -->
     <link rel="preload" href="../css/main.css" as="style">
-    <link rel="preload" href="../css/quote-system.css" as="style">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="../js/quote-system.js" as="script">
     
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/quote-system.css">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "PTFE 튜브 견적 요청",
-      "description": "Pure-Flon PTFE 튜브 견적 요청 페이지",
-      "url": "https://pure-flon.com/quote/request.html",
+      "name": "PTFE 제품 견적 요청",
+      "description": "Pure-Flon PTFE 제품 맞춤 견적 서비스",
+      "url": "https://pure-flon.com/quote/request",
       "mainEntity": {
         "@type": "Service",
-        "name": "PTFE 튜브 견적 서비스",
+        "name": "PTFE 제품 견적 서비스",
         "provider": {
           "@type": "Organization",
-          "name": "Pure-Flon"
+          "name": "Pure-Flon Co., Ltd."
         },
-        "description": "24시간 내 정확한 PTFE 튜브 견적 제공"
+        "areaServed": ["KR", "JP", "TW", "CN"],
+        "serviceType": "B2B Manufacturing Quote"
       }
     }
     </script>
@@ -72,588 +61,694 @@
                 </a>
             </div>
             
-            <nav class="nav" role="navigation">
-                <ul class="nav__menu">
-                    <li class="nav__item nav__item--dropdown">
-                        <a href="#" class="nav__link" aria-haspopup="true">
-                            제품 ▼
-                        </a>
-                        <ul class="nav__dropdown">
-                            <li><a href="../products/medical.html">의료용 PTFE 튜브</a></li>
-                            <li><a href="../products/semiconductor.html">반도체용 PTFE 튜브</a></li>
-                            <li><a href="../products/chemical.html">화학용 PTFE 튜브</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item"><a href="../" class="nav__link">홈</a></li>
-                    <li class="nav__item"><a href="mailto:contact@pure-flon.com" class="nav__link">문의</a></li>
+            <nav class="header__nav" aria-label="주 메뉴">
+                <ul class="nav__list">
+                    <li><a href="../" class="nav__link">홈</a></li>
+                    <li><a href="../products/" class="nav__link">제품</a></li>
+                    <li><a href="../markets/" class="nav__link">적용분야</a></li>
+                    <li><a href="../company/" class="nav__link">회사소개</a></li>
+                    <li><a href="../contact/" class="nav__link">문의하기</a></li>
+                    <li><a href="request" class="nav__link nav__link--active">견적요청</a></li>
                 </ul>
             </nav>
             
             <div class="header__actions">
-                <a href="../customer/portal/dashboard.html" class="btn btn--outline btn--sm">고객 포털</a>
-                <div class="quote-indicator">
-                    <span class="quote-badge">0</span>
+                <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                
+                <div class="language-selector">
+                    <button class="lang-button" aria-label="언어 선택">KO</button>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main id="main-content" role="main">
-        <!-- Quote Hero Section -->
-        <section class="quote-hero">
+    <main id="main-content" class="main">
+        <!-- Hero Section -->
+        <section class="hero hero--quote">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        PTFE 제품 견적 요청
+                        <span class="hero__subtitle">맞춤형 솔루션으로 최적의 가격 제안</span>
+                    </h1>
+                    <p class="hero__description">
+                        전문 엔지니어가 귀하의 요구사항을 분석하여 최적의 PTFE 솔루션과 
+                        경쟁력 있는 가격을 제안해드립니다. 24시간 내 회신을 보장합니다.
+                    </p>
+                    
+                    <div class="hero__features">
+                        <div class="feature-badge">
+                            <span class="feature-badge__icon">⚡</span>
+                            <span class="feature-badge__text">24시간 내 회신</span>
+                        </div>
+                        <div class="feature-badge">
+                            <span class="feature-badge__icon">🎯</span>
+                            <span class="feature-badge__text">맞춤형 솔루션</span>
+                        </div>
+                        <div class="feature-badge">
+                            <span class="feature-badge__icon">💰</span>
+                            <span class="feature-badge__text">경쟁력 있는 가격</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero__visual">
+                    <img src="../images/quote-hero-visual.webp" alt="PTFE 제품 견적 요청" 
+                         width="600" height="400" loading="eager">
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Form Section -->
+        <section class="quote-form-section">
             <div class="container">
-                <div class="quote-hero__content">
-                    <div class="breadcrumb">
-                        <nav aria-label="현재 위치">
-                            <ol>
-                                <li><a href="../">홈</a></li>
-                                <li aria-current="page">견적 요청</li>
-                            </ol>
-                        </nav>
+                <div class="quote-form-wrapper">
+                    <!-- Progress Indicator -->
+                    <div class="progress-indicator">
+                        <div class="progress-step progress-step--active" data-step="1">
+                            <span class="step-number">1</span>
+                            <span class="step-label">기본 정보</span>
+                        </div>
+                        <div class="progress-step" data-step="2">
+                            <span class="step-number">2</span>
+                            <span class="step-label">제품 선택</span>
+                        </div>
+                        <div class="progress-step" data-step="3">
+                            <span class="step-number">3</span>
+                            <span class="step-label">사양 설정</span>
+                        </div>
+                        <div class="progress-step" data-step="4">
+                            <span class="step-number">4</span>
+                            <span class="step-label">확인 및 전송</span>
+                        </div>
+                    </div>
+
+                    <!-- Quote Form -->
+                    <form id="quote-form" class="quote-form" novalidate>
+                        <!-- Step 1: 기본 정보 -->
+                        <div class="form-step form-step--active" data-step="1">
+                            <div class="form-step__header">
+                                <h2 class="form-step__title">기본 정보 입력</h2>
+                                <p class="form-step__description">
+                                    견적 관련 연락을 위한 기본 정보를 입력해주세요.
+                                </p>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="company-name" class="form-label required">
+                                        회사명
+                                    </label>
+                                    <input type="text" id="company-name" name="companyName" 
+                                           class="form-input" required
+                                           placeholder="예: 삼성전자"
+                                           aria-describedby="company-name-help">
+                                    <div id="company-name-help" class="form-help">
+                                        정확한 회사명을 입력해주세요.
+                                    </div>
+                                    <div class="form-error" aria-live="polite"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="business-type" class="form-label">
+                                        업종
+                                    </label>
+                                    <select id="business-type" name="businessType" class="form-select">
+                                        <option value="">업종을 선택해주세요</option>
+                                        <option value="medical">의료기기</option>
+                                        <option value="semiconductor">반도체</option>
+                                        <option value="chemical">화학공업</option>
+                                        <option value="pharmaceutical">제약</option>
+                                        <option value="food">식품</option>
+                                        <option value="automotive">자동차</option>
+                                        <option value="electronics">전자</option>
+                                        <option value="aerospace">항공우주</option>
+                                        <option value="other">기타</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contact-person" class="form-label required">
+                                        담당자명
+                                    </label>
+                                    <input type="text" id="contact-person" name="contactPerson" 
+                                           class="form-input" required
+                                           placeholder="예: 김담당">
+                                    <div class="form-error" aria-live="polite"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contact-title" class="form-label">
+                                        직책
+                                    </label>
+                                    <input type="text" id="contact-title" name="contactTitle" 
+                                           class="form-input"
+                                           placeholder="예: 구매팀 과장">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" class="form-label required">
+                                        이메일
+                                    </label>
+                                    <input type="email" id="email" name="email" 
+                                           class="form-input" required
+                                           placeholder="예: contact@company.com"
+                                           aria-describedby="email-help">
+                                    <div id="email-help" class="form-help">
+                                        견적서를 받을 이메일 주소를 입력해주세요.
+                                    </div>
+                                    <div class="form-error" aria-live="polite"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">
+                                        연락처
+                                    </label>
+                                    <input type="tel" id="phone" name="phone" 
+                                           class="form-input"
+                                           placeholder="예: 02-1234-5678">
+                                </div>
+                                
+                                <div class="form-group form-group--full">
+                                    <label for="country" class="form-label required">
+                                        국가/지역
+                                    </label>
+                                    <select id="country" name="country" class="form-select" required>
+                                        <option value="">국가를 선택해주세요</option>
+                                        <option value="KR" selected>대한민국</option>
+                                        <option value="JP">일본</option>
+                                        <option value="TW">대만</option>
+                                        <option value="CN">중국</option>
+                                        <option value="TH">태국</option>
+                                        <option value="VN">베트남</option>
+                                        <option value="ID">인도네시아</option>
+                                        <option value="MY">말레이시아</option>
+                                        <option value="SG">싱가포르</option>
+                                        <option value="PH">필리핀</option>
+                                        <option value="OTHER">기타</option>
+                                    </select>
+                                    <div class="form-error" aria-live="polite"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: 제품 선택 -->
+                        <div class="form-step" data-step="2">
+                            <div class="form-step__header">
+                                <h2 class="form-step__title">제품 카테고리 선택</h2>
+                                <p class="form-step__description">
+                                    필요한 PTFE 제품 유형을 선택해주세요. 여러 제품 선택 가능합니다.
+                                </p>
+                            </div>
+                            
+                            <div class="product-selector">
+                                <div class="product-category" data-category="medical">
+                                    <div class="product-card">
+                                        <div class="product-card__image">
+                                            <img src="../images/products/medical-ptfe.webp" 
+                                                 alt="의료용 PTFE" width="200" height="150">
+                                        </div>
+                                        <div class="product-card__content">
+                                            <h3 class="product-card__title">의료용 PTFE</h3>
+                                            <p class="product-card__description">
+                                                FDA 승인, USP Class VI 인증<br>
+                                                생체 적합성, 무독성
+                                            </p>
+                                            <div class="product-card__features">
+                                                <span class="feature-tag">FDA 승인</span>
+                                                <span class="feature-tag">USP Class VI</span>
+                                                <span class="feature-tag">생체적합</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__checkbox">
+                                            <input type="checkbox" id="medical-ptfe" 
+                                                   name="productCategories" value="medical">
+                                            <label for="medical-ptfe" class="checkbox-label">선택</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-category" data-category="semiconductor">
+                                    <div class="product-card">
+                                        <div class="product-card__image">
+                                            <img src="../images/products/semiconductor-ptfe.webp" 
+                                                 alt="반도체용 PTFE" width="200" height="150">
+                                        </div>
+                                        <div class="product-card__content">
+                                            <h3 class="product-card__title">반도체용 PTFE</h3>
+                                            <p class="product-card__description">
+                                                고순도, 저파티클<br>
+                                                초고온 안정성
+                                            </p>
+                                            <div class="product-card__features">
+                                                <span class="feature-tag">고순도</span>
+                                                <span class="feature-tag">저파티클</span>
+                                                <span class="feature-tag">초고온</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__checkbox">
+                                            <input type="checkbox" id="semiconductor-ptfe" 
+                                                   name="productCategories" value="semiconductor">
+                                            <label for="semiconductor-ptfe" class="checkbox-label">선택</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-category" data-category="chemical">
+                                    <div class="product-card">
+                                        <div class="product-card__image">
+                                            <img src="../images/products/chemical-ptfe.webp" 
+                                                 alt="화학용 PTFE" width="200" height="150">
+                                        </div>
+                                        <div class="product-card__content">
+                                            <h3 class="product-card__title">화학용 PTFE</h3>
+                                            <p class="product-card__description">
+                                                화학 저항성 우수<br>
+                                                강산/강염기 내성
+                                            </p>
+                                            <div class="product-card__features">
+                                                <span class="feature-tag">화학저항</span>
+                                                <span class="feature-tag">강산내성</span>
+                                                <span class="feature-tag">내구성</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__checkbox">
+                                            <input type="checkbox" id="chemical-ptfe" 
+                                                   name="productCategories" value="chemical">
+                                            <label for="chemical-ptfe" class="checkbox-label">선택</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: 사양 설정 -->
+                        <div class="form-step" data-step="3">
+                            <div class="form-step__header">
+                                <h2 class="form-step__title">제품 사양 설정</h2>
+                                <p class="form-step__description">
+                                    정확한 견적을 위해 상세 사양을 입력해주세요.
+                                </p>
+                            </div>
+                            
+                            <div class="specification-tabs">
+                                <div class="spec-tab-nav">
+                                    <button type="button" class="spec-tab spec-tab--active" data-tab="dimensions">
+                                        치수 사양
+                                    </button>
+                                    <button type="button" class="spec-tab" data-tab="conditions">
+                                        사용 조건
+                                    </button>
+                                    <button type="button" class="spec-tab" data-tab="quantity">
+                                        수량 및 기타
+                                    </button>
+                                </div>
+                                
+                                <!-- 치수 사양 -->
+                                <div class="spec-content spec-content--active" data-tab="dimensions">
+                                    <div class="form-grid">
+                                        <div class="form-group">
+                                            <label for="inner-diameter" class="form-label required">
+                                                내경 (ID, mm)
+                                            </label>
+                                            <input type="number" id="inner-diameter" name="innerDiameter" 
+                                                   class="form-input" step="0.1" min="0.1" 
+                                                   placeholder="예: 10.0">
+                                            <div class="form-error" aria-live="polite"></div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="outer-diameter" class="form-label">
+                                                외경 (OD, mm)
+                                            </label>
+                                            <input type="number" id="outer-diameter" name="outerDiameter" 
+                                                   class="form-input" step="0.1" min="0.1" 
+                                                   placeholder="예: 12.0">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="wall-thickness" class="form-label">
+                                                벽 두께 (mm)
+                                            </label>
+                                            <input type="number" id="wall-thickness" name="wallThickness" 
+                                                   class="form-input" step="0.1" min="0.1" 
+                                                   placeholder="예: 1.0">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="length" class="form-label">
+                                                길이 (mm)
+                                            </label>
+                                            <input type="number" id="length" name="length" 
+                                                   class="form-input" step="1" min="1" 
+                                                   placeholder="예: 1000">
+                                        </div>
+                                        
+                                        <div class="form-group form-group--full">
+                                            <label for="tolerance" class="form-label">
+                                                공차 요구사항
+                                            </label>
+                                            <select id="tolerance" name="tolerance" class="form-select">
+                                                <option value="">공차를 선택해주세요</option>
+                                                <option value="standard">표준 공차 (±0.1mm)</option>
+                                                <option value="precision">정밀 공차 (±0.05mm)</option>
+                                                <option value="high-precision">고정밀 공차 (±0.02mm)</option>
+                                                <option value="custom">맞춤 공차</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- 사용 조건 -->
+                                <div class="spec-content" data-tab="conditions">
+                                    <div class="form-grid">
+                                        <div class="form-group">
+                                            <label for="temp-min" class="form-label">
+                                                최저 사용온도 (°C)
+                                            </label>
+                                            <input type="number" id="temp-min" name="tempMin" 
+                                                   class="form-input" 
+                                                   placeholder="예: -200">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="temp-max" class="form-label">
+                                                최고 사용온도 (°C)
+                                            </label>
+                                            <input type="number" id="temp-max" name="tempMax" 
+                                                   class="form-input" 
+                                                   placeholder="예: 250">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="pressure" class="form-label">
+                                                사용 압력 (bar)
+                                            </label>
+                                            <input type="number" id="pressure" name="pressure" 
+                                                   class="form-input" step="0.1" 
+                                                   placeholder="예: 10.0">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="medium" class="form-label">
+                                                사용 매체/화학물질
+                                            </label>
+                                            <input type="text" id="medium" name="medium" 
+                                                   class="form-input" 
+                                                   placeholder="예: 황산, 질산, 염산">
+                                        </div>
+                                        
+                                        <div class="form-group form-group--full">
+                                            <label for="certifications" class="form-label">
+                                                필요 인증서
+                                            </label>
+                                            <div class="checkbox-group">
+                                                <label class="checkbox-item">
+                                                    <input type="checkbox" name="certifications" value="fda">
+                                                    <span class="checkbox-label">FDA 승인</span>
+                                                </label>
+                                                <label class="checkbox-item">
+                                                    <input type="checkbox" name="certifications" value="usp-class-vi">
+                                                    <span class="checkbox-label">USP Class VI</span>
+                                                </label>
+                                                <label class="checkbox-item">
+                                                    <input type="checkbox" name="certifications" value="iso-10993">
+                                                    <span class="checkbox-label">ISO 10993</span>
+                                                </label>
+                                                <label class="checkbox-item">
+                                                    <input type="checkbox" name="certifications" value="rohs">
+                                                    <span class="checkbox-label">RoHS</span>
+                                                </label>
+                                                <label class="checkbox-item">
+                                                    <input type="checkbox" name="certifications" value="reach">
+                                                    <span class="checkbox-label">REACH</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- 수량 및 기타 -->
+                                <div class="spec-content" data-tab="quantity">
+                                    <div class="form-grid">
+                                        <div class="form-group">
+                                            <label for="quantity" class="form-label required">
+                                                수량 (개)
+                                            </label>
+                                            <input type="number" id="quantity" name="quantity" 
+                                                   class="form-input" min="1" 
+                                                   placeholder="예: 100" required>
+                                            <div class="form-error" aria-live="polite"></div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="annual-volume" class="form-label">
+                                                연간 예상 수량 (개)
+                                            </label>
+                                            <input type="number" id="annual-volume" name="annualVolume" 
+                                                   class="form-input" 
+                                                   placeholder="예: 10000">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="delivery-date" class="form-label">
+                                                희망 납기일
+                                            </label>
+                                            <input type="date" id="delivery-date" name="deliveryDate" 
+                                                   class="form-input">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="budget-range" class="form-label">
+                                                예산 범위
+                                            </label>
+                                            <select id="budget-range" name="budgetRange" class="form-select">
+                                                <option value="">예산 범위를 선택해주세요</option>
+                                                <option value="under-100">10만원 미만</option>
+                                                <option value="100-500">10만원 - 50만원</option>
+                                                <option value="500-1000">50만원 - 100만원</option>
+                                                <option value="1000-5000">100만원 - 500만원</option>
+                                                <option value="over-5000">500만원 이상</option>
+                                                <option value="discuss">협의 필요</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="form-group form-group--full">
+                                            <label for="special-requirements" class="form-label">
+                                                특수 요구사항
+                                            </label>
+                                            <textarea id="special-requirements" name="specialRequirements" 
+                                                      class="form-textarea" rows="4"
+                                                      placeholder="특별한 요구사항이나 추가 정보가 있으시면 입력해주세요. 예: 특수 포장, 마킹, 컬러 등"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: 확인 및 전송 -->
+                        <div class="form-step" data-step="4">
+                            <div class="form-step__header">
+                                <h2 class="form-step__title">견적 요청 확인</h2>
+                                <p class="form-step__description">
+                                    입력하신 정보를 확인하고 견적 요청을 전송해주세요.
+                                </p>
+                            </div>
+                            
+                            <div class="quote-summary">
+                                <div class="summary-section">
+                                    <h3 class="summary-title">기본 정보</h3>
+                                    <div class="summary-content" id="summary-basic"></div>
+                                </div>
+                                
+                                <div class="summary-section">
+                                    <h3 class="summary-title">선택 제품</h3>
+                                    <div class="summary-content" id="summary-products"></div>
+                                </div>
+                                
+                                <div class="summary-section">
+                                    <h3 class="summary-title">제품 사양</h3>
+                                    <div class="summary-content" id="summary-specs"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="agreement-section">
+                                <label class="checkbox-item checkbox-item--large">
+                                    <input type="checkbox" name="privacy-agreement" required>
+                                    <span class="checkbox-label">
+                                        <a href="../privacy-policy" target="_blank">개인정보처리방침</a>에 동의합니다. (필수)
+                                    </span>
+                                </label>
+                                
+                                <label class="checkbox-item checkbox-item--large">
+                                    <input type="checkbox" name="marketing-agreement">
+                                    <span class="checkbox-label">
+                                        마케팅 정보 수신에 동의합니다. (선택)
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Form Navigation -->
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn--secondary btn--prev" disabled>
+                                이전 단계
+                            </button>
+                            
+                            <button type="button" class="btn btn--primary btn--next">
+                                다음 단계
+                            </button>
+                            
+                            <button type="submit" class="btn btn--success btn--submit" style="display: none;">
+                                견적 요청 전송
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <!-- Loading & Success States -->
+                    <div class="form-loading" style="display: none;">
+                        <div class="loading-spinner"></div>
+                        <p>견적 요청을 전송 중입니다...</p>
                     </div>
                     
-                    <div class="hero-header">
-                        <h1 class="quote-hero__title">
-                            PTFE 튜브 견적 요청
-                            <span class="hero-subtitle">24시간 내 정확한 견적을 받아보세요</span>
-                        </h1>
+                    <div class="form-success" style="display: none;">
+                        <div class="success-icon">✅</div>
+                        <h3>견적 요청이 성공적으로 전송되었습니다!</h3>
+                        <p>24시간 내에 담당자가 연락드리겠습니다.</p>
+                        <p>견적 번호: <strong id="quote-number"></strong></p>
                         
-                        <div class="hero-benefits">
-                            <div class="benefit-item">
-                                <div class="benefit-icon">⚡</div>
-                                <div class="benefit-text">
-                                    <strong>24시간 내 응답</strong>
-                                    <span>전문가가 직접 계산한 정확한 견적</span>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <div class="benefit-icon">🎯</div>
-                                <div class="benefit-text">
-                                    <strong>맞춤형 솔루션</strong>
-                                    <span>고객 요구사항에 맞는 최적 제품 추천</span>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <div class="benefit-icon">🌏</div>
-                                <div class="benefit-text">
-                                    <strong>다국어 지원</strong>
-                                    <span>현지어로 진행되는 전문 기술 상담</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quote Process Steps -->
-        <section class="quote-process">
-            <div class="container">
-                <h2 class="section-title">간편한 3단계 견적 요청</h2>
-                
-                <div class="process-steps">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>제품 선택</h3>
-                            <p>아래에서 필요한 PTFE 튜브 제품을 선택하고 견적 바구니에 담으세요</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>사양 입력</h3>
-                            <p>수량, 크기, 특별 요구사항 등 상세 사양을 입력해주세요</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>견적 완료</h3>
-                            <p>고객 정보 입력 후 전문가가 24시간 내 정확한 견적을 발송합니다</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Product Selection -->
-        <section class="product-selection" aria-labelledby="products-title">
-            <div class="container">
-                <h2 id="products-title" class="section-title">제품 선택</h2>
-                <p class="section-description">
-                    견적을 원하는 제품을 선택해주세요. 여러 제품을 한번에 견적 요청할 수 있습니다.
-                </p>
-                
-                <!-- Product Categories Filter -->
-                <div class="product-filters">
-                    <div class="filter-tabs">
-                        <button class="filter-tab active" data-filter="all">전체</button>
-                        <button class="filter-tab" data-filter="medical">의료용</button>
-                        <button class="filter-tab" data-filter="semiconductor">반도체용</button>
-                        <button class="filter-tab" data-filter="chemical">화학용</button>
-                        <button class="filter-tab" data-filter="custom">맞춤형</button>
-                    </div>
-                </div>
-
-                <!-- Product Grid -->
-                <div class="products-grid">
-                    <!-- Medical PTFE -->
-                    <div class="product-quote-card" data-category="medical" data-product-id="ptfe-medical-001">
-                        <div class="product-image">
-                            <img src="../images/products/medical-ptfe-tube.webp" 
-                                 alt="의료용 PTFE 튜브" width="300" height="200" loading="lazy">
-                            <div class="product-badge medical">FDA 승인</div>
-                        </div>
-                        <div class="product-info">
-                            <h3>의료용 PTFE 튜브</h3>
-                            <p class="product-description">
-                                FDA 승인, USP Class VI 인증을 받은 생체 적합성 PTFE 튜브
-                            </p>
-                            <div class="product-specs">
-                                <div class="spec-item">
-                                    <span class="spec-label">내경</span>
-                                    <span class="spec-value">0.5-50mm</span>
-                                </div>
-                                <div class="spec-item">
-                                    <span class="spec-label">온도</span>
-                                    <span class="spec-value">-270°C ~ 260°C</span>
-                                </div>
-                                <div class="spec-item">
-                                    <span class="spec-label">순도</span>
-                                    <span class="spec-value">99.9%</span>
-                                </div>
-                            </div>
-                            <div class="product-applications">
-                                <strong>주요 용도:</strong>
-                                <span>카테터, 수술기구, 진단장비</span>
-                            </div>
-                            <div class="product-actions">
-                                <button class="btn btn--primary add-to-quote" data-product-id="ptfe-medical-001">
-                                    견적에 추가
-                                </button>
-                                <a href="../products/medical.html" class="btn btn--outline">상세 보기</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Semiconductor PTFE -->
-                    <div class="product-quote-card" data-category="semiconductor" data-product-id="ptfe-semi-001">
-                        <div class="product-image">
-                            <img src="../images/products/semiconductor-ptfe-tube.webp" 
-                                 alt="반도체용 PTFE 튜브" width="300" height="200" loading="lazy">
-                            <div class="product-badge semiconductor">99.99% 순도</div>
-                        </div>
-                        <div class="product-info">
-                            <h3>반도체용 PTFE 튜브</h3>
-                            <p class="product-description">
-                                초고순도, 파티클 프리, 정전기 방지 특성의 반도체 전용 PTFE 튜브
-                            </p>
-                            <div class="product-specs">
-                                <div class="spec-item">
-                                    <span class="spec-label">내경</span>
-                                    <span class="spec-value">1-30mm</span>
-                                </div>
-                                <div class="spec-item">
-                                    <span class="spec-label">파티클</span>
-                                    <span class="spec-value">< 0.1 μm</span>
-                                </div>
-                                <div class="spec-item">
-                                    <span class="spec-label">순도</span>
-                                    <span class="spec-value">99.99%</span>
-                                </div>
-                            </div>
-                            <div class="product-applications">
-                                <strong>주요 용도:</strong>
-                                <span>웨이퍼 제조, 식각 공정, CVD/PVD 장비</span>
-                            </div>
-                            <div class="product-actions">
-                                <button class="btn btn--primary add-to-quote" data-product-id="ptfe-semi-001">
-                                    견적에 추가
-                                </button>
-                                <a href="../products/semiconductor.html" class="btn btn--outline">상세 보기</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Chemical PTFE -->
-                    <div class="product-quote-card" data-category="chemical" data-product-id="ptfe-chem-001">
-                        <div class="product-image">
-                            <img src="../images/products/chemical-ptfe-tube.webp" 
-                                 alt="화학용 PTFE 튜브" width="300" height="200" loading="lazy">
-                            <div class="product-badge chemical">200+ 화학물질</div>
-                        </div>
-                        <div class="product-info">
-                            <h3>화학용 PTFE 튜브</h3>
-                            <p class="product-description">
-                                강산, 강염기, 유기용매에 완전 내성을 가진 화학 처리용 PTFE 튜브
-                            </p>
-                            <div class="product-specs">
-                                <div class="spec-item">
-                                    <span class="spec-label">내경</span>
-                                    <span class="spec-value">2-100mm</span>
-                                </div>
-                                <div class="spec-item">
-                                    <span class="spec-label">최대압력</span>
-                                    <span class="spec-value">150 bar</span>
-                                </div>
-                                <div class="spec-item">
-                                    <span class="spec-label">온도</span>
-                                    <span class="spec-value">-50°C ~ 200°C</span>
-                                </div>
-                            </div>
-                            <div class="product-applications">
-                                <strong>주요 용도:</strong>
-                                <span>화학 반응기, 분석 장비, 유체 이송</span>
-                            </div>
-                            <div class="product-actions">
-                                <button class="btn btn--primary add-to-quote" data-product-id="ptfe-chem-001">
-                                    견적에 추가
-                                </button>
-                                <a href="../products/chemical.html" class="btn btn--outline">상세 보기</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Custom Solutions -->
-                    <div class="product-quote-card" data-category="custom" data-product-id="ptfe-custom-001">
-                        <div class="product-image">
-                            <img src="../images/products/custom-ptfe-solutions.webp" 
-                                 alt="맞춤형 PTFE 솔루션" width="300" height="200" loading="lazy">
-                            <div class="product-badge custom">맞춤 제작</div>
-                        </div>
-                        <div class="product-info">
-                            <h3>맞춤형 PTFE 솔루션</h3>
-                            <p class="product-description">
-                                고객의 특별한 요구사항에 맞춘 완전 맞춤형 PTFE 튜브 및 부품
-                            </p>
-                            <div class="product-specs">
-                                <div class="spec-item">
-                                    <span class="spec-label">크기</span>
-                                    <span class="spec-value">요구사항에 따라</span>
-                                </div>
-                                <div class="spec-item">
-                                    <span class="spec-label">특수가공</span>
-                                    <span class="spec-value">플랜지, 커넥터 등</span>
-                                </div>
-                                <div class="spec-item">
-                                    <span class="spec-label">인증</span>
-                                    <span class="spec-value">고객 요구 인증</span>
-                                </div>
-                            </div>
-                            <div class="product-applications">
-                                <strong>주요 용도:</strong>
-                                <span>특수 장비, 연구개발, 시제품</span>
-                            </div>
-                            <div class="product-actions">
-                                <button class="btn btn--primary add-to-quote" data-product-id="ptfe-custom-001">
-                                    견적에 추가
-                                </button>
-                                <a href="mailto:contact@pure-flon.com?subject=맞춤형 솔루션 문의" class="btn btn--outline">상담 문의</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bulk Order Option -->
-                <div class="bulk-order-option">
-                    <div class="bulk-order-card">
-                        <div class="bulk-order-content">
-                            <h3>대량 주문 할인</h3>
-                            <p>
-                                월 100개 이상, 연 1,000개 이상의 대량 주문 시 특별 할인가를 제공합니다.
-                                전담 계정매니저가 배정되어 최적의 공급 계획을 수립해드립니다.
-                            </p>
-                            <div class="bulk-benefits">
-                                <span class="bulk-benefit">최대 30% 할인</span>
-                                <span class="bulk-benefit">전담 계정매니저</span>
-                                <span class="bulk-benefit">우선 납기</span>
-                                <span class="bulk-benefit">맞춤형 포장</span>
-                            </div>
-                        </div>
-                        <div class="bulk-order-action">
-                            <button class="btn btn--primary" onclick="showBulkOrderForm()">
-                                대량 주문 견적 요청
+                        <div class="success-actions">
+                            <a href="../" class="btn btn--primary">홈으로 돌아가기</a>
+                            <button type="button" class="btn btn--secondary" onclick="window.print()">
+                                견적 요청서 인쇄
                             </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Current Quote Summary (Floating) -->
-        <div id="quote-summary-float" class="quote-summary-float" style="display: none;">
-            <div class="quote-summary-header">
-                <h3>현재 견적 바구니</h3>
-                <button class="summary-toggle" aria-label="견적 요약 토글">▼</button>
-            </div>
-            <div class="quote-summary-body">
-                <div class="quote-items-preview"></div>
-                <div class="quote-totals">
-                    <div class="total-line">
-                        <span>총 수량:</span>
-                        <span class="total-quantity">0개</span>
-                    </div>
-                    <div class="total-line">
-                        <span>예상 금액:</span>
-                        <span class="total-amount">₩0</span>
-                    </div>
-                </div>
-                <div class="quote-actions">
-                    <button class="btn btn--primary btn--block" onclick="PureFlonQuote.showQuoteModal()">
-                        견적 요청하기
-                    </button>
-                    <button class="btn btn--outline btn--sm" onclick="PureFlonQuote.clearQuote()">
-                        전체 삭제
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- FAQ Section -->
-        <section class="quote-faq">
-            <div class="container">
-                <h2 class="section-title">자주 묻는 질문</h2>
                 
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <h3>견적 응답 시간은 얼마나 걸리나요?</h3>
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>
-                                표준 제품은 24시간 내, 맞춤형 제품은 48시간 내에 정확한 견적을 발송해드립니다. 
-                                긴급한 경우 전화 연락 시 당일 견적도 가능합니다.
-                            </p>
+                <!-- Quote Benefits Sidebar -->
+                <aside class="quote-benefits">
+                    <div class="benefits-card">
+                        <h3 class="benefits-title">Pure-Flon 견적 서비스</h3>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⏰</div>
+                            <div class="benefit-content">
+                                <h4>빠른 응답</h4>
+                                <p>24시간 내 전문 엔지니어 답변</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🎯</div>
+                            <div class="benefit-content">
+                                <h4>맞춤형 솔루션</h4>
+                                <p>고객 요구사항에 최적화된 제품 제안</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">💰</div>
+                            <div class="benefit-content">
+                                <h4>경쟁력 있는 가격</h4>
+                                <p>직접 제조로 최적의 가격 제공</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🏆</div>
+                            <div class="benefit-content">
+                                <h4>품질 보증</h4>
+                                <p>ISO 인증 품질관리 시스템</p>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <h3>최소 주문 수량이 있나요?</h3>
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>
-                                표준 제품은 1미터부터 주문 가능합니다. 맞춤형 제품의 경우 최소 주문량이 
-                                있을 수 있으므로 견적 요청 시 상담받으시기 바랍니다.
-                            </p>
+                    <div class="contact-card">
+                        <h3>긴급 문의</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-label">전화:</span>
+                                <a href="tel:+8221234567">02-1234-5678</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">이메일:</span>
+                                <a href="mailto:quotes@pure-flon.com">quotes@pure-flon.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">업무시간:</span>
+                                <span>평일 09:00 - 18:00</span>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <h3>샘플 제공이 가능한가요?</h3>
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>
-                                표준 제품의 경우 무료 샘플(최대 30cm)을 제공합니다. 맞춤형 제품의 
-                                샘플은 별도 비용이 발생할 수 있으며, 정식 주문 시 샘플 비용을 차감해드립니다.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <h3>인증서는 제공되나요?</h3>
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>
-                                FDA, USP Class VI, ISO 등 각종 인증서와 재료 성적서(COA), 시험성적서를 
-                                제공합니다. 특별한 인증서가 필요한 경우 견적 요청 시 명시해주세요.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact CTA -->
-        <section class="contact-cta">
-            <div class="container">
-                <div class="cta-content">
-                    <h2>더 자세한 상담이 필요하신가요?</h2>
-                    <p>
-                        전문 엔지니어와 직접 상담하여 최적의 PTFE 솔루션을 찾아보세요. 
-                        기술적 질문부터 대량 주문까지 모든 문의를 환영합니다.
-                    </p>
-                    <div class="contact-methods">
-                        <a href="tel:+82-32-123-4567" class="contact-method">
-                            <div class="method-icon">📞</div>
-                            <div class="method-info">
-                                <strong>전화 상담</strong>
-                                <span>+82-32-123-4567</span>
-                            </div>
-                        </a>
-                        <a href="mailto:contact@pure-flon.com" class="contact-method">
-                            <div class="method-icon">📧</div>
-                            <div class="method-info">
-                                <strong>이메일 문의</strong>
-                                <span>contact@pure-flon.com</span>
-                            </div>
-                        </a>
-                        <a href="../customer/portal/dashboard.html" class="contact-method">
-                            <div class="method-icon">🏢</div>
-                            <div class="method-info">
-                                <strong>고객 포털</strong>
-                                <span>온라인 계정 관리</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                </aside>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <div class="container">
+    <footer class="footer">
+        <div class="footer__container">
             <div class="footer__content">
-                <div class="footer__brand">
-                    <img src="../images/logo-white.svg" alt="Pure-Flon" width="160" height="36">
-                    <p>동아시아 시장을 선도하는 프리미엄 PTFE 튜브 제조업체</p>
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <img src="../images/logo-white.svg" alt="Pure-Flon" width="180" height="40">
+                    </div>
+                    <p class="footer__description">
+                        동아시아 시장을 선도하는 프리미엄 PTFE 제품 전문 제조업체
+                    </p>
                 </div>
                 
-                <div class="footer__links">
-                    <div class="footer__section">
-                        <h3>제품</h3>
-                        <ul>
-                            <li><a href="../products/medical.html">의료용 PTFE 튜브</a></li>
-                            <li><a href="../products/semiconductor.html">반도체용 PTFE 튜브</a></li>
-                            <li><a href="../products/chemical.html">화학용 PTFE 튜브</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer__section">
-                        <h3>연락처</h3>
-                        <ul>
-                            <li><a href="mailto:quote@pure-flon.com">quote@pure-flon.com</a></li>
-                            <li><span>+82-32-123-4567</span></li>
-                        </ul>
+                <div class="footer__section">
+                    <h3 class="footer__title">제품</h3>
+                    <ul class="footer__links">
+                        <li><a href="../products/medical">의료용 PTFE</a></li>
+                        <li><a href="../products/semiconductor">반도체용 PTFE</a></li>
+                        <li><a href="../products/chemical">화학용 PTFE</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">서비스</h3>
+                    <ul class="footer__links">
+                        <li><a href="request">견적 요청</a></li>
+                        <li><a href="../support">기술 지원</a></li>
+                        <li><a href="../downloads">자료실</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">연락처</h3>
+                    <div class="footer__contact">
+                        <p>📞 02-1234-5678</p>
+                        <p>📧 contact@pure-flon.com</p>
+                        <p>📍 서울시 강남구 테헤란로 123</p>
                     </div>
                 </div>
             </div>
             
             <div class="footer__bottom">
-                <p>&copy; 2025 Pure-Flon. All rights reserved.</p>
+                <p>&copy; 2025 Pure-Flon Co., Ltd. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="../privacy-policy">개인정보처리방침</a>
+                    <a href="../terms">이용약관</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="../js/main.js"></script>
-    <script src="../js/modules/QuoteSystem.js"></script>
+    <script src="../js/quote-system.js"></script>
+    
     <script>
-        // 페이지 로드 시 견적 시스템 초기화
+        // Initialize quote form
         document.addEventListener('DOMContentLoaded', function() {
-            // 글로벌 견적 시스템 인스턴스 생성
-            window.PureFlonQuote = new QuoteSystem();
-            
-            // 제품 필터 기능
-            setupProductFilters();
-            
-            // FAQ 아코디언 기능
-            setupFAQAccordion();
-            
-            // 플로팅 견적 요약 기능
-            setupFloatingQuoteSummary();
+            new QuoteSystem();
         });
-
-        function setupProductFilters() {
-            const filterTabs = document.querySelectorAll('.filter-tab');
-            const productCards = document.querySelectorAll('.product-quote-card');
-
-            filterTabs.forEach(tab => {
-                tab.addEventListener('click', function() {
-                    const filter = this.dataset.filter;
-                    
-                    // 활성 탭 변경
-                    filterTabs.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    // 제품 카드 필터링
-                    productCards.forEach(card => {
-                        if (filter === 'all' || card.dataset.category === filter) {
-                            card.style.display = 'block';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
-            });
-        }
-
-        function setupFAQAccordion() {
-            const faqQuestions = document.querySelectorAll('.faq-question');
-
-            faqQuestions.forEach(question => {
-                question.addEventListener('click', function() {
-                    const faqItem = this.closest('.faq-item');
-                    const answer = faqItem.querySelector('.faq-answer');
-                    const icon = this.querySelector('.faq-icon');
-                    const isOpen = this.getAttribute('aria-expanded') === 'true';
-
-                    // 모든 다른 FAQ 닫기
-                    faqQuestions.forEach(q => {
-                        if (q !== this) {
-                            q.setAttribute('aria-expanded', 'false');
-                            q.querySelector('.faq-icon').textContent = '+';
-                            q.closest('.faq-item').querySelector('.faq-answer').style.display = 'none';
-                        }
-                    });
-
-                    // 현재 FAQ 토글
-                    if (isOpen) {
-                        this.setAttribute('aria-expanded', 'false');
-                        icon.textContent = '+';
-                        answer.style.display = 'none';
-                    } else {
-                        this.setAttribute('aria-expanded', 'true');
-                        icon.textContent = '-';
-                        answer.style.display = 'block';
-                    }
-                });
-            });
-        }
-
-        function setupFloatingQuoteSummary() {
-            const floatingSummary = document.getElementById('quote-summary-float');
-            const summaryToggle = floatingSummary.querySelector('.summary-toggle');
-            const summaryBody = floatingSummary.querySelector('.quote-summary-body');
-
-            // 토글 기능
-            summaryToggle.addEventListener('click', function() {
-                const isOpen = summaryBody.style.display !== 'none';
-                summaryBody.style.display = isOpen ? 'none' : 'block';
-                this.textContent = isOpen ? '▼' : '▲';
-            });
-
-            // 견적 바구니 업데이트 시 플로팅 요약 업데이트
-            window.addEventListener('quoteUpdated', function(e) {
-                const { totalItems, totalAmount } = e.detail;
-                
-                if (totalItems > 0) {
-                    floatingSummary.style.display = 'block';
-                    floatingSummary.querySelector('.total-quantity').textContent = totalItems + '개';
-                    floatingSummary.querySelector('.total-amount').textContent = totalAmount;
-                } else {
-                    floatingSummary.style.display = 'none';
-                }
-            });
-        }
-
-        function showBulkOrderForm() {
-            // 대량 주문 전용 모달 표시
-            alert('대량 주문 견적 시스템이 곧 출시됩니다!\n\n현재는 이메일로 문의해주시기 바랍니다:\nbulk@pure-flon.com');
-            
-            // TODO: 대량 주문 전용 모달 구현
-            // 임시로 이메일 링크 제공
-            window.location.href = 'mailto:bulk@pure-flon.com?subject=대량 주문 견적 요청&body=안녕하세요,%0A%0A대량 주문에 대한 견적을 요청합니다.%0A%0A- 제품:%0A- 예상 수량:%0A- 용도:%0A- 희망 납기:%0A%0A감사합니다.';
-        }
     </script>
 </body>
 </html>
