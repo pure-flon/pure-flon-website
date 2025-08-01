@@ -1,6 +1,11 @@
 {
+  "$schema": "https://openapi.vercel.com/vercel.json",
   "version": 2,
   "name": "pure-flon-website",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "framework": null,
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
@@ -84,6 +89,36 @@
       "maxDuration": 30
     }
   },
-  "regions": ["icn1", "nrt1", "hnd1"],
-  "public": true
+  "regions": ["icn1", "nrt1", "hnd1", "sin1"],
+  "public": true,
+  "github": {
+    "enabled": true,
+    "silent": true
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production",
+      "ENABLE_FILE_SYSTEM_API": "1"
+    }
+  },
+  "env": {
+    "SITE_URL": "https://pure-flon.com",
+    "API_URL": "https://api.pure-flon.com",
+    "GA_MEASUREMENT_ID": "@ga_measurement_id",
+    "SENTRY_DSN": "@sentry_dsn"
+  },
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".",
+  "crons": [
+    {
+      "path": "/api/cron/sitemap",
+      "schedule": "0 0 * * 0"
+    },
+    {
+      "path": "/api/cron/cache-warmup",
+      "schedule": "0 */6 * * *"
+    }
+  ]
 }

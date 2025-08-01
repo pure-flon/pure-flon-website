@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Pure-Flon PTFE 튜브 웹사이트 사이트맵 -->
-<!-- 업데이트: 2025-01-22 -->
+<!-- 파일 업데이트: 2025-07-31 v3.1.0 -->
+<!-- 개선사항: 구조화된 URL 패턴, 우선순위 최적화, 다국어 지원 강화 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"

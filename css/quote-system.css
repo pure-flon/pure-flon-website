@@ -10,10 +10,10 @@
    CSS Custom Properties (Variables)
    ================================ */
 :root {
-  /* Quote System Brand Colors */
-  --quote-primary: #1e5cb3;
-  --quote-primary-light: #3574d4;
-  --quote-primary-dark: #0d2e5c;
+  /* Quote System Brand Colors - main.css와 통합 */
+  --quote-primary: #2c5282;
+  --quote-primary-light: #4299e1;
+  --quote-primary-dark: #1a365d;
   --quote-secondary: #2c3e50;
   --quote-accent: #ff6b35;
   --quote-success: #27ae60;
@@ -46,16 +46,16 @@
   --quote-space-16: 4rem;     /* 64px */
   --quote-space-20: 5rem;     /* 80px */
   
-  /* Quote System Typography */
+  /* Quote System Typography - 가독성 개선 */
   --quote-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  --quote-font-size-xs: 0.75rem;   /* 12px */
-  --quote-font-size-sm: 0.875rem;  /* 14px */
-  --quote-font-size-base: 1rem;    /* 16px */
-  --quote-font-size-lg: 1.125rem;  /* 18px */
-  --quote-font-size-xl: 1.25rem;   /* 20px */
-  --quote-font-size-2xl: 1.5rem;   /* 24px */
-  --quote-font-size-3xl: 1.875rem; /* 30px */
-  --quote-font-size-4xl: 2.25rem;  /* 36px */
+  --quote-font-size-xs: 0.875rem;  /* 14px - 최소 크기 증가 */
+  --quote-font-size-sm: 1rem;      /* 16px */
+  --quote-font-size-base: 1.125rem;/* 18px */
+  --quote-font-size-lg: 1.25rem;   /* 20px */
+  --quote-font-size-xl: 1.5rem;    /* 24px */
+  --quote-font-size-2xl: 1.875rem; /* 30px */
+  --quote-font-size-3xl: 2.25rem;  /* 36px */
+  --quote-font-size-4xl: 2.5rem;   /* 40px */
   --quote-font-size-5xl: 3rem;     /* 48px */
   
   /* Quote System Weights */
@@ -104,9 +104,11 @@
    ================================ */
 .quote-page {
   font-family: var(--quote-font-family);
-  line-height: 1.6;
+  line-height: 1.7; /* 가독성 향상 */
   color: var(--quote-gray-900);
   background-color: white;
+  letter-spacing: -0.01em;
+  word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
 }
 
 /* ================================
@@ -221,9 +223,10 @@
 }
 
 .feature-content p {
-  color: var(--quote-gray-600);
+  color: var(--quote-gray-700); /* 더 진한 색상으로 대비 개선 */
   font-size: var(--quote-font-size-sm);
   margin: 0;
+  line-height: 1.6;
 }
 
 .hero-visual {
@@ -266,8 +269,8 @@
 
 .stat-label {
   font-size: var(--quote-font-size-sm);
-  color: var(--quote-gray-600);
-  font-weight: var(--quote-font-weight-medium);
+  color: var(--quote-gray-700); /* 더 나은 대비 */
+  font-weight: var(--quote-font-weight-semibold);
 }
 
 /* ================================
@@ -289,12 +292,13 @@
 
 .section-subtitle {
   font-size: var(--quote-font-size-lg);
-  color: var(--quote-gray-600);
+  color: var(--quote-gray-700); /* 더 진한 색상 */
   text-align: center;
   margin-bottom: var(--quote-space-12);
-  max-width: 600px;
+  max-width: 800px; /* 더 넓은 읽기 영역 */
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.7;
 }
 
 .process-timeline {
@@ -383,8 +387,8 @@
 }
 
 .step-content p {
-  color: var(--quote-gray-600);
-  line-height: 1.6;
+  color: var(--quote-gray-700); /* 더 나은 대비 */
+  line-height: 1.7;
   margin-bottom: var(--quote-space-4);
 }
 
@@ -445,27 +449,38 @@
 }
 
 .form-group label {
-  font-weight: var(--quote-font-weight-semibold);
-  color: var(--quote-gray-700);
-  margin-bottom: var(--quote-space-2);
+  font-weight: var(--quote-font-weight-bold); /* 더 강한 강조 */
+  color: var(--quote-gray-900); /* 더 진한 색상 */
+  margin-bottom: var(--quote-space-3);
   font-size: var(--quote-font-size-sm);
+  display: block;
+  cursor: pointer;
 }
 
 .form-group input,
 .form-group select {
-  padding: var(--quote-space-3);
-  border: var(--quote-border-width-2) solid var(--quote-gray-300);
+  padding: var(--quote-space-3) var(--quote-space-4);
+  border: var(--quote-border-width-2) solid var(--quote-gray-600); /* 더 진한 테두리 */
   border-radius: var(--quote-border-radius);
   font-size: var(--quote-font-size-base);
   transition: all var(--quote-transition-fast);
   background: white;
+  color: var(--quote-gray-900);
+  min-height: 48px; /* 터치 타겟 크기 */
+  width: 100%;
+}
+
+.form-group input::placeholder,
+.form-group select::placeholder {
+  color: var(--quote-gray-500);
+  opacity: 0.8;
 }
 
 .form-group input:focus,
 .form-group select:focus {
   outline: none;
   border-color: var(--quote-primary);
-  box-shadow: 0 0 0 3px rgba(30, 92, 179, 0.1);
+  box-shadow: 0 0 0 4px rgba(30, 92, 179, 0.2); /* 더 명확한 포커스 */
 }
 
 .form-group input.error,
@@ -585,7 +600,8 @@
 .result-note p {
   margin: 0;
   font-size: var(--quote-font-size-sm);
-  color: var(--quote-gray-600);
+  color: var(--quote-gray-700);
+  line-height: 1.6;
 }
 
 /* ================================
@@ -739,8 +755,8 @@
 }
 
 .card-description {
-  color: var(--quote-gray-600);
-  line-height: 1.6;
+  color: var(--quote-gray-700); /* 더 진한 색상 */
+  line-height: 1.7;
   margin-bottom: var(--quote-space-6);
   font-size: var(--quote-font-size-sm);
 }
@@ -972,9 +988,10 @@
 }
 
 .faq-answer p {
-  color: var(--quote-gray-700);
-  line-height: 1.6;
+  color: var(--quote-gray-800); /* 더 진한 색상 */
+  line-height: 1.7;
   margin: 0 0 var(--quote-space-4) 0;
+  font-size: var(--quote-font-size-base);
 }
 
 .faq-answer p:last-child {
@@ -1132,23 +1149,30 @@
   border: var(--quote-border-width-2) solid transparent;
   border-radius: var(--quote-border-radius);
   font-size: var(--quote-font-size-base);
-  font-weight: var(--quote-font-weight-semibold);
+  font-weight: var(--quote-font-weight-bold); /* 더 강한 강조 */
   text-decoration: none;
   cursor: pointer;
   transition: all var(--quote-transition-fast);
   position: relative;
   overflow: hidden;
+  min-height: 48px; /* 터치 타겟 크기 */
+  letter-spacing: 0.01em;
 }
 
-.btn:focus {
-  outline: 2px solid var(--quote-primary);
-  outline-offset: 2px;
+.btn:focus-visible {
+  outline: 3px solid var(--quote-primary);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(30, 92, 179, 0.3);
 }
 
 .btn:disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
-  pointer-events: none;
+  background: var(--quote-gray-300) !important;
+  color: var(--quote-gray-600) !important;
+  border-color: var(--quote-gray-300) !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 .btn--primary {
@@ -1191,13 +1215,15 @@
 }
 
 .btn--sm {
-  padding: var(--quote-space-2) var(--quote-space-4);
+  padding: var(--quote-space-3) var(--quote-space-4);
   font-size: var(--quote-font-size-sm);
+  min-height: 44px; /* 모바일 최소 크기 */
 }
 
 .btn--lg {
   padding: var(--quote-space-4) var(--quote-space-8);
   font-size: var(--quote-font-size-lg);
+  min-height: 56px;
 }
 
 .btn--block {
@@ -1240,13 +1266,22 @@
 .form-select,
 .form-textarea {
   width: 100%;
-  padding: var(--quote-space-3);
-  border: var(--quote-border-width-2) solid var(--quote-gray-300);
+  padding: var(--quote-space-3) var(--quote-space-4);
+  border: var(--quote-border-width-2) solid var(--quote-gray-600); /* 더 진한 테두리 */
   border-radius: var(--quote-border-radius);
   font-size: var(--quote-font-size-base);
   font-family: inherit;
   transition: all var(--quote-transition-fast);
   background: white;
+  color: var(--quote-gray-900);
+  min-height: 48px;
+}
+
+.form-input::placeholder,
+.form-select::placeholder,
+.form-textarea::placeholder {
+  color: var(--quote-gray-500);
+  opacity: 0.8;
 }
 
 .form-input:focus,
@@ -1254,7 +1289,7 @@
 .form-textarea:focus {
   outline: none;
   border-color: var(--quote-primary);
-  box-shadow: 0 0 0 3px rgba(30, 92, 179, 0.1);
+  box-shadow: 0 0 0 4px rgba(30, 92, 179, 0.2);
 }
 
 .form-input--error,
@@ -1269,7 +1304,15 @@
   color: var(--quote-error);
   font-size: var(--quote-font-size-sm);
   margin-top: var(--quote-space-2);
-  font-weight: var(--quote-font-weight-medium);
+  font-weight: var(--quote-font-weight-semibold);
+  padding: var(--quote-space-2) var(--quote-space-3);
+  background: rgba(231, 76, 60, 0.1);
+  border-radius: var(--quote-border-radius-sm);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+.form-error[aria-live="polite"] {
+  display: block;
 }
 
 .form-textarea {
@@ -1309,8 +1352,10 @@
 .breadcrumb__link {
   color: var(--quote-primary);
   text-decoration: none;
-  font-weight: var(--quote-font-weight-medium);
+  font-weight: var(--quote-font-weight-semibold);
   transition: color var(--quote-transition-fast);
+  padding: var(--quote-space-2);
+  display: inline-block;
 }
 
 .breadcrumb__link:hover {
@@ -1413,11 +1458,12 @@
   top: var(--quote-space-4);
 }
 
-/* Focus indicators */
+/* Focus indicators - 접근성 강화 */
 *:focus-visible {
-  outline: 2px solid var(--quote-primary);
-  outline-offset: 2px;
+  outline: 3px solid var(--quote-primary);
+  outline-offset: 3px;
   border-radius: var(--quote-border-radius-sm);
+  box-shadow: 0 0 0 6px rgba(30, 92, 179, 0.2);
 }
 
 /* Reduced motion preferences */
@@ -1444,16 +1490,22 @@
     --quote-gray-300: #000000;
     --quote-gray-600: #000000;
     --quote-gray-700: #000000;
+    --quote-primary: #0000ff;
+    --quote-error: #ff0000;
   }
   
   .btn--outline {
-    border-width: var(--quote-border-width-2);
+    border-width: 3px;
   }
   
   .form-input,
   .form-select,
   .form-textarea {
-    border-width: var(--quote-border-width-2);
+    border-width: 3px;
+  }
+  
+  *:focus-visible {
+    outline-width: 4px;
   }
 }
 
