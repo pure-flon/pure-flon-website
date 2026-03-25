@@ -2,9 +2,9 @@
   "$schema": "https://openapi.vercel.com/vercel.json",
   "version": 2,
   "name": "pure-flon-website",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install",
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "installCommand": "",
   "framework": null,
   "cleanUrls": true,
   "trailingSlash": false,
@@ -107,10 +107,7 @@
     "GA_MEASUREMENT_ID": "@ga_measurement_id",
     "SENTRY_DSN": "@sentry_dsn"
   },
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".",
+  "devCommand": "npx serve .",
   "crons": [
     {
       "path": "/api/cron/sitemap",
