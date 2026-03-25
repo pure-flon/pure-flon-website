@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trading & Governance Lab — 기술 블로그</title>
+    <meta name="description" content="MoE 앙상블 트레이딩, 자율 AI 거버넌스, 자동 재학습 파이프라인. 실전 운영에서 얻은 한국어 기술 인사이트.">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: { extend: { fontFamily: { sans: ['Pretendard Variable', 'system-ui', 'sans-serif'] } } }
+    }
+    </script>
+    <style>
+        * { -webkit-font-smoothing: antialiased; }
+        .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.06); }
+    </style>
+</head>
+<body class="bg-[#030305] text-zinc-100 font-sans antialiased">
+
+    <header class="py-12 px-6 border-b border-white/5">
+        <div class="max-w-3xl mx-auto">
+            <p class="text-blue-400 text-sm tracking-widest uppercase mb-2">Technical Blog</p>
+            <h1 class="text-4xl font-bold tracking-tight">AI Trading & Governance Lab</h1>
+            <p class="text-zinc-500 mt-3">실전 운영에서 얻은 인사이트. MoE 트레이딩, 자율 거버넌스, 자동 재학습.</p>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 py-16 space-y-12">
+
+        <!-- Post 1 -->
+        <article class="glass rounded-2xl p-8 hover:border-blue-500/20 transition-colors">
+            <p class="text-blue-400 text-xs font-mono mb-3">2026-03-25 · Trading Architecture</p>
+            <h2 class="text-2xl font-bold mb-4">MoE 앙상블로 크립토 트레이딩 시스템 만들기</h2>
+            <div class="text-zinc-400 text-sm leading-relaxed space-y-4">
+                <p>Mixture of Experts (MoE) 아키텍처를 실전 크립토 트레이딩에 적용한 경험을 공유합니다. 4개의 전문 expert (Neutral-Long, S6-Long, Short, Flat)가 각각 다른 시장 레짐에서 활성화되며, gating network가 실시간으로 전문가를 선택합니다.</p>
+                <p><strong>핵심 설계 결정:</strong></p>
+                <ul class="list-disc list-inside space-y-1 text-zinc-500">
+                    <li>24차원 feature space (1시간 봉) — FR_z + OI_vel이 핵심 discriminator</li>
+                    <li>Flat expert의 threshold를 0.35로 설정 — 관망이 가장 중요한 의사결정</li>
+                    <li>Walk-forward 재학습: 고정 모델 PF 0.71(파산) vs Walk-forward PF 1.40(수익)</li>
+                    <li>BOCD (Bayesian Online Change Detection)로 레짐 전환 감지 → 자동 재학습 트리거</li>
+                </ul>
+                <p><strong>결과:</strong> V4 라이브 배포 중. Long OOS PF 1.16, Short OOS PF 1.07. 자동 재학습 파이프라인으로 모델 드리프트 방어.</p>
+            </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="glass rounded-2xl p-8 hover:border-purple-500/20 transition-colors">
+            <p class="text-purple-400 text-xs font-mono mb-3">2026-03-25 · AI Governance</p>
+            <h2 class="text-2xl font-bold mb-4">49개 AI 페르소나가 24시간 자율 운영하는 거버넌스 만들기</h2>
+            <div class="text-zinc-400 text-sm leading-relaxed space-y-4">
+                <p>Claude Code로 49개의 전문 AI 페르소나를 만들고, 이들이 24시간 자율적으로 거버넌스를 수행하는 시스템을 구축했습니다. 각 페르소나는 고유한 권한, 경계, 하드가드를 가집니다.</p>
+                <p><strong>핵심 아키텍처 (v2.0):</strong></p>
+                <ul class="list-disc list-inside space-y-1 text-zinc-500">
+                    <li>병렬 DAG: 17 serial → 8 parallel (2.6x 가속, 신뢰도 16.7%→92.3%)</li>
+                    <li>에코 챔버 방지: 스펙트럴 분석으로 λ₁ < 0.50 강제 (외부 데이터 50%+ 필수)</li>
+                    <li>Harness Engineer: graph/spectral/info 3-layer 메타 컨트롤러</li>
+                    <li>Rate-Distortion 분석: 최적 페르소나 수 K=10±2</li>
+                </ul>
+                <p><strong>교훈:</strong> 시스템이 자기 자신을 유지보수하는 데 84.6% 시간을 쓰면 실패. 에코 브레이커가 핵심.</p>
+            </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="glass rounded-2xl p-8 hover:border-green-500/20 transition-colors">
+            <p class="text-green-400 text-xs font-mono mb-3">2026-03-25 · MLOps</p>
+            <h2 class="text-2xl font-bold mb-4">트레이딩 모델 자동 재학습 파이프라인 설계</h2>
+            <div class="text-zinc-400 text-sm leading-relaxed space-y-4">
+                <p>고정 모델은 반드시 성능이 저하됩니다. 6년 백테스트에서 고정 모델 PF 0.71 (파산)이지만, Walk-forward 재학습 적용 시 PF 1.40 (수익). 자동 재학습 파이프라인의 핵심 설계를 공유합니다.</p>
+                <p><strong>3종 트리거:</strong></p>
+                <ul class="list-disc list-inside space-y-1 text-zinc-500">
+                    <li>Weekly: 매주 월요일 07:00 UTC 정기 재학습</li>
+                    <li>BOCD Drift: P(cp) > 0.05 + 24h Sharpe < 0 → 레짐 변화 감지</li>
+                    <li>Performance Degradation: PF < 0.8 또는 5연속 손실</li>
+                </ul>
+                <p><strong>안전장치:</strong> 백업 3세대, survival gate (S+A≥20), 48h shadow 비교, 7일 쿨다운. 현재 모델 성능이 저하 중일 때만 자동 승격, 아니면 폐기.</p>
+            </div>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="glass rounded-2xl p-8 hover:border-amber-500/20 transition-colors">
+            <p class="text-amber-400 text-xs font-mono mb-3">2026-03-25 · DevOps</p>
+            <h2 class="text-2xl font-bold mb-4">Circuit Breaker FP 96% 문제 해결기</h2>
+            <div class="text-zinc-400 text-sm leading-relaxed space-y-4">
+                <p>거버넌스 시스템의 Circuit Breaker가 False Positive 96%로 시스템을 마비시킨 사건. 93개 커밋이 push 불가 상태로 적체되고, 복구 커밋조차 push할 수 없는 데드락에 빠진 이야기.</p>
+                <p><strong>근본 원인 3가지:</strong></p>
+                <ul class="list-disc list-inside space-y-1 text-zinc-500">
+                    <li>Gate validator가 미커밋 아티팩트에 실행 → 존재하지 않는 파일을 FAIL 처리</li>
+                    <li>CB 에스컬레이션 쿨다운이 30분 → 17슬롯 순차 실행 중 3번 FP로 BLOCKED</li>
+                    <li>BLOCKED 상태에서 복구 커밋 push 불가 → 데드락</li>
+                </ul>
+                <p><strong>해결:</strong> --committed-only 모드 (git ls-files), 쿨다운 4시간, recovery bypass (복구 파일만 BLOCKED에서도 push 허용), FP auto-recovery (BLOCKED→WARN 자동 강등).</p>
+            </div>
+        </article>
+
+        <!-- Post 5 -->
+        <article class="glass rounded-2xl p-8 hover:border-cyan-500/20 transition-colors">
+            <p class="text-cyan-400 text-xs font-mono mb-3">2026-03-25 · AI Engineering</p>
+            <h2 class="text-2xl font-bold mb-4">자율 수익 탐색 엔진 (AREX) 설계</h2>
+            <div class="text-zinc-400 text-sm leading-relaxed space-y-4">
+                <p>AI 시스템이 스스로 수익 기회를 탐색하고, 실험하고, 측정하고, Kill/Scale 판정을 내리는 자율 수익 탐색 엔진. 기존 스킬들의 "연결 코드"로 설계.</p>
+                <p><strong>6-Phase Loop:</strong></p>
+                <ul class="list-disc list-inside space-y-1 text-zinc-500">
+                    <li>SCAN: market-radar로 기회 발굴 + 5-factor 점수</li>
+                    <li>SELECT: 실험 설계 (가설, 성공 지표, Kill 기준)</li>
+                    <li>BUILD: Supanova/Factory/gstack으로 MVP 생성</li>
+                    <li>MEASURE: GitHub Traffic API로 무료 측정</li>
+                    <li>DECIDE: Bayesian Kill/Scale 판정</li>
+                    <li>LEARN: 카테고리별 Beta 사후분포 업데이트</li>
+                </ul>
+                <p><strong>Anti-echo 설계:</strong> 모든 KPI가 외부 (방문자, 클릭, 수익) → 자기 참조 불가능.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="py-12 px-6 border-t border-white/5">
+        <div class="max-w-3xl mx-auto flex items-center justify-between">
+            <p class="text-zinc-600 text-sm">AI Trading & Governance Lab</p>
+            <a href="https://github.com/pure-flon" target="_blank" class="text-zinc-600 text-sm hover:text-zinc-400">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
