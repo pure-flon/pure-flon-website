@@ -37,12 +37,12 @@
                 <p>Mixture of Experts (MoE) 아키텍처를 실전 크립토 트레이딩에 적용한 경험을 공유합니다. 4개의 전문 expert (Neutral-Long, S6-Long, Short, Flat)가 각각 다른 시장 레짐에서 활성화되며, gating network가 실시간으로 전문가를 선택합니다.</p>
                 <p><strong>핵심 설계 결정:</strong></p>
                 <ul class="list-disc list-inside space-y-1 text-zinc-500">
-                    <li>24차원 feature space (1시간 봉) — FR_z + OI_vel이 핵심 discriminator</li>
-                    <li>Flat expert의 threshold를 0.35로 설정 — 관망이 가장 중요한 의사결정</li>
-                    <li>Walk-forward 재학습: 고정 모델 PF 0.71(파산) vs Walk-forward PF 1.40(수익)</li>
+                    <li>다차원 feature space (1시간 봉 기준) — 펀딩레이트, OI 변화량 등이 핵심</li>
+                    <li>Flat expert (관망)의 비중을 적절히 설정 — 안 하는 게 최선인 경우가 많다</li>
+                    <li>Walk-forward 재학습: 고정 모델은 장기적으로 파산, 재학습 적용 시 수익 전환</li>
                     <li>BOCD (Bayesian Online Change Detection)로 레짐 전환 감지 → 자동 재학습 트리거</li>
                 </ul>
-                <p><strong>결과:</strong> V4 라이브 배포 중. Long OOS PF 1.16, Short OOS PF 1.07. 자동 재학습 파이프라인으로 모델 드리프트 방어.</p>
+                <p><strong>결과:</strong> 라이브 배포 중. Long/Short 모두 OOS 기준 수익 구간 달성. 자동 재학습 파이프라인으로 모델 드리프트 방어.</p>
             </div>
         </article>
 
