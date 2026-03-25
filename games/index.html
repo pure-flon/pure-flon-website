@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Games | Pure Flon</title>
+<meta name="description" content="AI 기반 미니 게임 컬렉션. 스무고개, 퀴즈, 밈 게임을 즐겨보세요.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#e0e0e0;min-height:100vh}
+.container{max-width:600px;margin:0 auto;padding:40px 20px}
+h1{font-size:2rem;margin-bottom:8px;color:#fff}
+.sub{color:#666;margin-bottom:40px}
+.game-card{display:block;background:#161616;border:1px solid #222;border-radius:16px;padding:24px;margin-bottom:16px;text-decoration:none;color:#e0e0e0;transition:all 0.15s}
+.game-card:hover{background:#1e1e1e;border-color:#444;transform:translateY(-2px)}
+.game-emoji{font-size:2rem;margin-bottom:12px}
+.game-title{font-size:1.2rem;font-weight:600;color:#fff;margin-bottom:4px}
+.game-desc{font-size:0.9rem;color:#888}
+.badge{display:inline-block;font-size:0.7rem;background:#1a1a3a;color:#88f;padding:2px 8px;border-radius:6px;margin-left:8px}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Games</h1>
+<p class="sub">AI powered mini games</p>
+<a href="/games/twenty-questions/" class="game-card">
+  <div class="game-emoji">🧠</div>
+  <div class="game-title">AI 스무고개 <span class="badge">NEW</span></div>
+  <div class="game-desc">무언가를 떠올리세요. AI가 20번의 질문으로 맞춰볼게요.</div>
+</a>
+<a href="#" class="game-card" style="opacity:0.4;pointer-events:none">
+  <div class="game-emoji">🎯</div>
+  <div class="game-title">밈 퀴즈 <span class="badge">COMING SOON</span></div>
+  <div class="game-desc">인터넷 밈을 맞춰보세요.</div>
+</a>
+<a href="#" class="game-card" style="opacity:0.4;pointer-events:none">
+  <div class="game-emoji">⚡</div>
+  <div class="game-title">스피드 퀴즈 <span class="badge">COMING SOON</span></div>
+  <div class="game-desc">10초 안에 답하세요.</div>
+</a>
+</div>
+</body>
+</html>
