@@ -44,11 +44,29 @@ h1{font-size:1.8rem;text-align:center;margin:32px 0 8px;letter-spacing:-0.02em;c
 .score{text-align:center;margin:20px 0;font-size:0.85rem;color:#555}
 .share-btn{background:#1a1a2e;border-color:#2a2a4e;color:#aab}
 .share-btn:hover{background:#252540}
+.ai-banner{margin-top:32px;padding:20px;border:1px solid #1a1a2e;border-radius:14px;background:#0d0d1a;text-align:center}
+.ai-banner p{font-size:0.85rem;color:#888;line-height:1.6;margin-bottom:12px}
+.ai-banner .ai-tag{display:inline-block;font-size:0.7rem;background:#1a1a3a;color:#88f;padding:3px 10px;border-radius:20px;margin-bottom:10px;letter-spacing:0.05em}
+.ai-banner .sponsor-links{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.ai-banner .sponsor-links a{font-size:0.8rem;color:#aab;text-decoration:none;padding:8px 14px;border:1px solid #252540;border-radius:10px;transition:all 0.15s}
+.ai-banner .sponsor-links a:hover{background:#1a1a2e;border-color:#4444aa;color:#fff}
 @media(max-width:360px){.container{padding:12px}h1{font-size:1.5rem}.question-text{font-size:1rem}}
 </style>
 </head>
 <body>
 <div class="container" id="app"></div>
+
+<div class="container">
+  <div class="ai-banner">
+    <span class="ai-tag">MADE BY AI</span>
+    <p>이 게임은 AI가 코드부터 디자인까지 자동으로 만들었습니다.<br>재밌으셨다면 AI 개발자를 후원해주세요.</p>
+    <div class="sponsor-links">
+      <a href="https://ko-fi.com/pureflon" target="_blank">Ko-fi</a>
+      <a href="https://github.com/sponsors/pure-flon" target="_blank">GitHub Sponsors</a>
+      <a href="https://paypal.me/pureflon" target="_blank">PayPal</a>
+    </div>
+  </div>
+</div>
 
 <script>
 const CATEGORIES = {
