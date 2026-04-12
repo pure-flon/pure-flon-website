@@ -1,328 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="canonical" href="https://pure-flon.com/">
-    <title>404 — Page Not Found | Pure-Flon</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found | Pure-Flon</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Explore Pure-Flon's systems — governance, security, and research." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://pure-flon.com/" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WE091T20M0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-WE091T20M0');
+    gtag('event', '404_page', { page_path: window.location.pathname });
+  </script>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="404 — Pure-Flon" />
+  <meta property="og:description" content="Page not found. Navigate to our systems." />
+  <meta property="og:url" content="https://pure-flon.com/404" />
+  <meta property="og:site_name" content="Pure-Flon" />
 
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans KR', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            surface: {
+              DEFAULT: '#0a0a0f',
+              card: '#12121a',
+              hover: '#1a1a26',
+              border: '#1e1e2e',
+            },
+            accent: {
+              DEFAULT: '#6366f1',
+              dim: '#4f46e5',
+            },
+            muted: '#64748b',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: #0a0a0f;
+      color: #e2e8f0;
+      font-family: 'Inter', 'Noto Sans KR', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-        :root {
-            --bg: #0a0a0a;
-            --surface: #111111;
-            --surface-2: #181818;
-            --border: rgba(255,255,255,0.08);
-            --border-hover: rgba(255,255,255,0.18);
-            --text-primary: #f0f0f0;
-            --text-secondary: #888;
-            --text-muted: #555;
-            --accent: #6366f1;
-            --accent-glow: rgba(99,102,241,0.15);
-            --green: #22c55e;
-            --purple: #a855f7;
-            --amber: #f59e0b;
-        }
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background-image:
+        linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
 
-        html, body {
-            min-height: 100vh;
-            background: var(--bg);
-            color: var(--text-primary);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            -webkit-font-smoothing: antialiased;
-        }
+    .bg-glow {
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.07) 0%, transparent 65%);
+      z-index: 0;
+      pointer-events: none;
+    }
 
-        /* Ambient glow background */
-        body::before {
-            content: '';
-            position: fixed;
-            top: -30%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 800px;
-            height: 600px;
-            background: radial-gradient(ellipse, rgba(99,102,241,0.06) 0%, transparent 70%);
-            pointer-events: none;
-            z-index: 0;
-        }
+    @keyframes glitch {
+      0%, 90%, 100% { text-shadow: none; }
+      92% { text-shadow: -3px 0 rgba(99, 102, 241, 0.6), 3px 0 rgba(236, 72, 153, 0.4); }
+      94% { text-shadow: 3px 0 rgba(99, 102, 241, 0.6), -3px 0 rgba(236, 72, 153, 0.4); }
+      96% { text-shadow: -2px 0 rgba(99, 102, 241, 0.5); }
+    }
+    .glitch-code { animation: glitch 5s ease-in-out infinite; }
 
-        .page {
-            position: relative;
-            z-index: 1;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 1.25rem;
-        }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-in { animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.25s; }
+    .delay-3 { animation-delay: 0.4s; }
+    .delay-4 { animation-delay: 0.55s; }
+    .delay-5 { animation-delay: 0.7s; }
 
-        /* 404 number */
-        .error-number {
-            font-size: clamp(6rem, 18vw, 10rem);
-            font-weight: 900;
-            letter-spacing: -0.04em;
-            line-height: 1;
-            background: linear-gradient(135deg, #f0f0f0 0%, #555 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
-            user-select: none;
-        }
+    .nav-card {
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      display: block;
+      text-decoration: none;
+    }
+    .nav-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(99, 102, 241, 0.4) !important;
+      box-shadow: 0 12px 40px rgba(99, 102, 241, 0.12);
+      background: #1a1a26 !important;
+    }
 
-        .divider-line {
-            width: 40px;
-            height: 2px;
-            background: var(--accent);
-            margin: 1.5rem auto;
-            border-radius: 2px;
-        }
+    .btn-primary {
+      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+      transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-primary:hover {
+      opacity: 0.88;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(99, 102, 241, 0.4);
+    }
 
-        .headline {
-            font-size: clamp(1.125rem, 3vw, 1.5rem);
-            font-weight: 600;
-            letter-spacing: -0.01em;
-            color: var(--text-primary);
-            margin-bottom: 0.625rem;
-            text-align: center;
-        }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.5); }
+    }
+    .pulse-dot { animation: pulse 2s ease-in-out infinite; }
 
-        .subline {
-            font-size: 0.9375rem;
-            color: var(--text-secondary);
-            text-align: center;
-            max-width: 360px;
-            line-height: 1.6;
-            margin-bottom: 2.5rem;
-        }
+    @keyframes scanLine {
+      0% { top: -2px; }
+      100% { top: calc(100% + 2px); }
+    }
+    .scan-line {
+      position: absolute;
+      left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent);
+      animation: scanLine 3.5s linear infinite;
+      pointer-events: none;
+    }
 
-        /* CTA Button */
-        .btn-home {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.75rem;
-            background: var(--accent);
-            color: #fff;
-            font-size: 0.9375rem;
-            font-weight: 600;
-            border-radius: 10px;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            margin-bottom: 3rem;
-            box-shadow: 0 0 0 1px rgba(99,102,241,0.3), 0 8px 24px rgba(99,102,241,0.2);
-        }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0a0f; }
+    ::-webkit-scrollbar-thumb { background: #1e1e2e; border-radius: 3px; }
 
-        .btn-home:hover {
-            background: #4f46e5;
-            transform: translateY(-1px);
-            box-shadow: 0 0 0 1px rgba(99,102,241,0.4), 0 12px 32px rgba(99,102,241,0.3);
-        }
-
-        .btn-home svg { flex-shrink: 0; }
-
-        /* Navigation cards */
-        .cards-label {
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 0.75rem;
-            width: 100%;
-            max-width: 680px;
-        }
-
-        .card {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            padding: 1.125rem 1rem;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            opacity: 0;
-            transition: opacity 0.2s ease;
-        }
-
-        .card:hover {
-            border-color: var(--border-hover);
-            background: var(--surface-2);
-            transform: translateY(-2px);
-        }
-
-        .card-gov::before  { background: radial-gradient(circle at top left, rgba(99,102,241,0.08), transparent 60%); }
-        .card-sec::before  { background: radial-gradient(circle at top left, rgba(168,85,247,0.08), transparent 60%); }
-        .card-blog::before { background: radial-gradient(circle at top left, rgba(245,158,11,0.08), transparent 60%); }
-
-        .card:hover::before { opacity: 1; }
-
-        .card-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            flex-shrink: 0;
-        }
-        .card-gov  .card-dot { background: var(--accent); box-shadow: 0 0 8px rgba(99,102,241,0.6); }
-        .card-sec  .card-dot { background: var(--purple); box-shadow: 0 0 8px rgba(168,85,247,0.6); }
-        .card-blog .card-dot { background: var(--amber); box-shadow: 0 0 8px rgba(245,158,11,0.6); }
-
-        .card-header {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .card-tag {
-            font-size: 0.6875rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            padding: 0.125rem 0.375rem;
-            border-radius: 4px;
-        }
-        .card-gov  .card-tag { background: rgba(99,102,241,0.12); color: #818cf8; }
-        .card-sec  .card-tag { background: rgba(168,85,247,0.12); color: #c084fc; }
-        .card-blog .card-tag { background: rgba(245,158,11,0.12); color: #fbbf24; }
-
-        .card-title {
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            letter-spacing: -0.01em;
-        }
-
-        .card-desc {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            line-height: 1.5;
-        }
-
-        .card-arrow {
-            margin-top: auto;
-            color: var(--text-muted);
-            font-size: 0.75rem;
-            transition: color 0.2s;
-        }
-        .card:hover .card-arrow { color: var(--text-secondary); }
-
-        /* Footer note */
-        .footer-note {
-            margin-top: 2.5rem;
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            text-align: center;
-        }
-
-        .footer-note a {
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        .footer-note a:hover { color: var(--text-secondary); }
-
-        /* Responsive */
-        @media (max-width: 540px) {
-            .cards {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .btn-home, .card { transition: none; }
-        }
-    </style>
+    .lang-ko-only { display: none; }
+    body.lang-ko .lang-en-only { display: none; }
+    body.lang-ko .lang-ko-only { display: block; }
+  </style>
+    <script src="/js/site-i18n.js"></script>
 </head>
 <body>
-    <div class="page">
-        <div class="error-number" aria-hidden="true">404</div>
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
 
-        <div class="divider-line"></div>
+  <div class="relative z-10 flex flex-col min-h-screen">
 
-        <h1 class="headline">Page Not Found</h1>
-        <p class="subline">The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
-
-        <a href="/" class="btn-home">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 2L2 7.5V14h4v-4h4v4h4V7.5L8 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-            </svg>
-            Go Home
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md" style="background: rgba(10,10,15,0.85); border-bottom: 1px solid #1e1e2e;">
+      <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="/" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: rgba(99,102,241,0.2);">
+            <div class="w-3 h-3 rounded-sm" style="background:#6366f1;"></div>
+          </div>
+          <span class="text-lg font-semibold tracking-tight text-white">Pure-Flon</span>
         </a>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <button onclick="document.body.classList.toggle('lang-ko')"
+            class="text-xs px-3 py-1 rounded-full"
+            style="border: 1px solid #1e1e2e; color:#64748b; background:transparent; cursor:pointer; font-family:inherit; transition: border-color 0.2s, color 0.2s;"
+            onmouseover="this.style.borderColor='rgba(99,102,241,0.4)'; this.style.color='#a5b4fc';"
+            onmouseout="this.style.borderColor='#1e1e2e'; this.style.color='#64748b';">
+            EN / KO
+          </button>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium"
+            style="background: rgba(16,185,129,0.1); color:#34d399; border: 1px solid rgba(16,185,129,0.2);">
+            <span class="w-1.5 h-1.5 rounded-full pulse-dot" style="background:#34d399;"></span>
+            Online
+          </span>
+        </div>
+      </div>
+    </header>
 
-        <p class="cards-label">Explore</p>
+    <!-- Main -->
+    <main class="flex-1 flex flex-col items-center justify-center px-6" style="padding-top:6rem; padding-bottom:4rem;">
+      <div class="max-w-3xl w-full mx-auto text-center">
 
-        <nav class="cards" aria-label="Site navigation">
-            <a href="/gov/" class="card card-gov">
-                <div class="card-header">
-                    <span class="card-dot" aria-hidden="true"></span>
-                    <span class="card-tag">GOV</span>
-                </div>
-                <div class="card-title">Claude Circle</div>
-                <div class="card-desc">49-persona autonomous AI governance framework</div>
-                <div class="card-arrow">→</div>
-            </a>
+        <!-- Error box -->
+        <div class="animate-in delay-1" style="display:inline-block; margin-bottom:2rem;">
+          <div class="relative overflow-hidden rounded-2xl px-8 py-6"
+            style="background: #12121a; border: 1px solid #1e1e2e;">
+            <div class="scan-line"></div>
+            <p class="text-xs font-mono tracking-widest uppercase mb-2" style="color:#6366f1; letter-spacing:0.15em;">
+              system · error · 404
+            </p>
+            <p class="glitch-code font-extrabold text-white"
+              style="font-size: clamp(5rem, 18vw, 9rem); line-height:1; letter-spacing:-0.04em;">
+              404
+            </p>
+          </div>
+        </div>
 
-            <a href="/security-audit/" class="card card-sec">
-                <div class="card-header">
-                    <span class="card-dot" aria-hidden="true"></span>
-                    <span class="card-tag">SECURITY</span>
-                </div>
-                <div class="card-title">AI Security Audit</div>
-                <div class="card-desc">14-phase automated security audit methodology</div>
-                <div class="card-arrow">→</div>
-            </a>
+        <!-- Headline EN -->
+        <div class="lang-en-only">
+          <h1 class="animate-in delay-2 font-bold text-white tracking-tight"
+            style="font-size: clamp(1.75rem, 5vw, 2.5rem); margin-bottom:1rem;">
+            Page Not Found
+          </h1>
+          <p class="animate-in delay-3 text-base leading-relaxed" style="color:#64748b; margin-bottom:2.5rem;">
+            The signal is lost. This route doesn't exist — or was decommissioned.<br class="hidden sm:block" />
+            Navigate to an active system below.
+          </p>
+        </div>
 
-            <a href="/blog/" class="card card-blog">
-                <div class="card-header">
-                    <span class="card-dot" aria-hidden="true"></span>
-                    <span class="card-tag">BLOG</span>
-                </div>
-                <div class="card-title">Research Lab</div>
-                <div class="card-desc">AI trading & governance technical insights</div>
-                <div class="card-arrow">→</div>
-            </a>
-        </nav>
+        <!-- Headline KO -->
+        <div class="lang-ko-only">
+          <h1 class="animate-in delay-2 font-bold text-white tracking-tight"
+            style="font-size: clamp(1.75rem, 5vw, 2.5rem); margin-bottom:1rem;">
+            페이지를 찾을 수 없습니다
+          </h1>
+          <p class="animate-in delay-3 text-base leading-relaxed" style="color:#64748b; margin-bottom:2.5rem;">
+            신호가 끊겼습니다. 이 경로는 존재하지 않거나 폐기되었습니다.<br class="hidden sm:block" />
+            아래 활성 시스템으로 이동하세요.
+          </p>
+        </div>
 
-        <p class="footer-note">
-            <a href="/">pure-flon.com</a>
-        </p>
-    </div>
+        <!-- Navigation cards -->
+        <div class="animate-in delay-4" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; margin-bottom:2.5rem;">
 
-    <script>
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'page_not_found', {
-                page_location: window.location.href,
-                referrer: document.referrer
-            });
-        }
-    </script>
+          <!-- GOV -->
+          <a href="/company/about.html" class="nav-card rounded-xl p-6 text-left"
+            style="background: #12121a; border: 1px solid #1e1e2e;">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
+              style="background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.2);">
+              <svg class="w-5 h-5" style="color:#6366f1;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <p class="text-xs font-medium tracking-widest uppercase mb-1" style="color:#6366f1; letter-spacing:0.1em;">GOV</p>
+            <p class="lang-en-only font-semibold text-white" style="margin-bottom:0.25rem;">Governance</p>
+            <p class="lang-ko-only font-semibold text-white" style="margin-bottom:0.25rem;">거버넌스</p>
+            <p class="lang-en-only text-sm" style="color:#64748b;">System structure &amp; ops</p>
+            <p class="lang-ko-only text-sm" style="color:#64748b;">시스템 구조 및 운영</p>
+          </a>
+
+          <!-- Security Audit -->
+          <a href="/company/about.html" class="nav-card rounded-xl p-6 text-left"
+            style="background: #12121a; border: 1px solid #1e1e2e;">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
+              style="background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.2);">
+              <svg class="w-5 h-5" style="color:#f59e0b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <p class="text-xs font-medium tracking-widest uppercase mb-1" style="color:#f59e0b; letter-spacing:0.1em;">Security</p>
+            <p class="lang-en-only font-semibold text-white" style="margin-bottom:0.25rem;">Security Audit</p>
+            <p class="lang-ko-only font-semibold text-white" style="margin-bottom:0.25rem;">보안 감사</p>
+            <p class="lang-en-only text-sm" style="color:#64748b;">Threat analysis &amp; hardening</p>
+            <p class="lang-ko-only text-sm" style="color:#64748b;">위협 분석 및 강화</p>
+          </a>
+
+          <!-- Blog -->
+          <a href="/blog/" class="nav-card rounded-xl p-6 text-left"
+            style="background: #12121a; border: 1px solid #1e1e2e;">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
+              style="background: rgba(52,211,153,0.1); border: 1px solid rgba(52,211,153,0.2);">
+              <svg class="w-5 h-5" style="color:#34d399;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+              </svg>
+            </div>
+            <p class="text-xs font-medium tracking-widest uppercase mb-1" style="color:#34d399; letter-spacing:0.1em;">Blog</p>
+            <p class="lang-en-only font-semibold text-white" style="margin-bottom:0.25rem;">Research Log</p>
+            <p class="lang-ko-only font-semibold text-white" style="margin-bottom:0.25rem;">리서치 로그</p>
+            <p class="lang-en-only text-sm" style="color:#64748b;">Articles &amp; insights</p>
+            <p class="lang-ko-only text-sm" style="color:#64748b;">아티클 및 인사이트</p>
+          </a>
+        </div>
+
+        <!-- CTA -->
+        <div class="animate-in delay-5">
+          <a href="/" class="btn-primary inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-semibold text-white">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            <span class="lang-en-only">Go Home</span>
+            <span class="lang-ko-only">홈으로</span>
+          </a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 text-center py-8 px-6" style="border-top: 1px solid #1e1e2e;">
+      <p class="text-xs" style="color:#334155;">
+        &copy; 2026 Pure-Flon &nbsp;&middot;&nbsp;
+        <a href="/" style="color:#64748b; text-decoration:none;"
+          onmouseover="this.style.color='#a5b4fc'" onmouseout="this.style.color='#64748b'">pure-flon.com</a>
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>

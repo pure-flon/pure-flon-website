@@ -63,6 +63,31 @@
   ],
   "redirects": [
     {
+      "source": "/blog/:path*",
+      "destination": "https://opsself.studio/blog/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/games/:path*",
+      "destination": "https://opsself.studio/games/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/:path*",
+      "destination": "https://opsself.studio/tools/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/saas/:path*",
+      "destination": "https://opsself.studio/saas/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/feed.xml",
+      "destination": "https://opsself.studio/feed.xml",
+      "permanent": true
+    },
+    {
       "source": "/quote",
       "destination": "/quote/request.html",
       "permanent": true
@@ -85,7 +110,7 @@
     }
   ],
   "functions": {
-    "quote/api/submit.js": {
+    "api/quotes/submit.js": {
       "maxDuration": 30
     }
   },
